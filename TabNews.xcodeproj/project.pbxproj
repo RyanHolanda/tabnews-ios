@@ -108,12 +108,13 @@
 		B5633BC62AE1719D00A3BE16 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		B5633BC92AE172C900A3BE16 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B5633BCC2AE17DF000A3BE16 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
-		B5669A372AFFC66000953E49 /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsSnapshotTests.xctest; path = /Users/holland/Documents/TabNews/build/Debug/TabNewsSnapshotTests.xctest; sourceTree = "<absolute>"; };
-		B5669A382AFFC66000953E49 /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUnitTests.xctest; path = /Users/holland/Documents/TabNews/build/Debug/TabNewsUnitTests.xctest; sourceTree = "<absolute>"; };
-		B5669A392AFFC66000953E49 /* TabNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUITests.xctest; path = "/Users/holland/Documents/TabNews/build/Debug-iphoneos/TabNewsUITests.xctest"; sourceTree = "<absolute>"; };
 		B5669A3E2AFFD4DE00953E49 /* MarkdownBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownBody.swift; sourceTree = "<group>"; };
 		B5669A432AFFD62B00953E49 /* MarkdownTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTheme.swift; sourceTree = "<group>"; };
 		B5669A452B0006D100953E49 /* ContentViewUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewUnitTests.swift; sourceTree = "<group>"; };
+		B57302742B001AAB00DB62EA /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabNewsSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57302752B001AAB00DB62EA /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabNewsUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57302762B001AAB00DB62EA /* TabNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57302772B001AD600DB62EA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B5910EDB2AE1DEE7000E00D5 /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
 		B5910EDE2AE1E066000E00D5 /* ContentPreviewDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPreviewDTO.swift; sourceTree = "<group>"; };
 		B5910EE12AE1E8F6000E00D5 /* RecentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsViewModel.swift; sourceTree = "<group>"; };
@@ -187,6 +188,7 @@
 		B5633BA52AE1715A00A3BE16 = {
 			isa = PBXGroup;
 			children = (
+				B57302772B001AD600DB62EA /* .gitignore */,
 				B5210B772AEECBDD00B18B96 /* Makefile */,
 				B5633BC92AE172C900A3BE16 /* .swiftlint.yml */,
 				B5D8AE8C2AE59C9F00F4CA21 /* TestPlan.xctestplan */,
@@ -195,6 +197,9 @@
 				B5D8AE6E2AE58FB500F4CA21 /* TabNewsSnapshotTests */,
 				B5D8AE842AE59B1400F4CA21 /* TabNewsUnitTests */,
 				B5A199722AF41A5E00243A5E /* TabNewsUITests */,
+				B57302742B001AAB00DB62EA /* TabNewsSnapshotTests.xctest */,
+				B57302752B001AAB00DB62EA /* TabNewsUnitTests.xctest */,
+				B57302762B001AAB00DB62EA /* TabNewsUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -408,7 +413,7 @@
 			);
 			name = TabNewsUITests;
 			productName = TabNewsUITests;
-			productReference = B5669A392AFFC66000953E49 /* TabNewsUITests.xctest */;
+			productReference = B57302762B001AAB00DB62EA /* TabNewsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		B5D8AE6C2AE58FB500F4CA21 /* TabNewsSnapshotTests */ = {
@@ -434,7 +439,7 @@
 				B5210AE22AEC913100B18B96 /* Cuckoo */,
 			);
 			productName = TabNewsSnapshotTests;
-			productReference = B5669A372AFFC66000953E49 /* TabNewsSnapshotTests.xctest */;
+			productReference = B57302742B001AAB00DB62EA /* TabNewsSnapshotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		B5D8AE822AE59B1400F4CA21 /* TabNewsUnitTests */ = {
@@ -458,7 +463,7 @@
 				B556C6942AEB0DD00091527A /* Cuckoo */,
 			);
 			productName = TabNewsUnitTests;
-			productReference = B5669A382AFFC66000953E49 /* TabNewsUnitTests.xctest */;
+			productReference = B57302752B001AAB00DB62EA /* TabNewsUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */

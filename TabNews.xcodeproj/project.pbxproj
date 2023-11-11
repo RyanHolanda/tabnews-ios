@@ -111,9 +111,9 @@
 		B5669A3E2AFFD4DE00953E49 /* MarkdownBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownBody.swift; sourceTree = "<group>"; };
 		B5669A432AFFD62B00953E49 /* MarkdownTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTheme.swift; sourceTree = "<group>"; };
 		B5669A452B0006D100953E49 /* ContentViewUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewUnitTests.swift; sourceTree = "<group>"; };
-		B57302742B001AAB00DB62EA /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabNewsSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B57302752B001AAB00DB62EA /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabNewsUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B57302762B001AAB00DB62EA /* TabNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57302742B001AAB00DB62EA /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsSnapshotTests.xctest; path = /Users/holland/Documents/TabNews/build/Debug/TabNewsSnapshotTests.xctest; sourceTree = "<absolute>"; };
+		B57302752B001AAB00DB62EA /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUnitTests.xctest; path = /Users/holland/Documents/TabNews/build/Debug/TabNewsUnitTests.xctest; sourceTree = "<absolute>"; };
+		B57302762B001AAB00DB62EA /* TabNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUITests.xctest; path = "/Users/holland/Documents/TabNews/build/Debug-iphoneos/TabNewsUITests.xctest"; sourceTree = "<absolute>"; };
 		B57302772B001AD600DB62EA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B5910EDB2AE1DEE7000E00D5 /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
 		B5910EDE2AE1E066000E00D5 /* ContentPreviewDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPreviewDTO.swift; sourceTree = "<group>"; };
@@ -197,9 +197,6 @@
 				B5D8AE6E2AE58FB500F4CA21 /* TabNewsSnapshotTests */,
 				B5D8AE842AE59B1400F4CA21 /* TabNewsUnitTests */,
 				B5A199722AF41A5E00243A5E /* TabNewsUITests */,
-				B57302742B001AAB00DB62EA /* TabNewsSnapshotTests.xctest */,
-				B57302752B001AAB00DB62EA /* TabNewsUnitTests.xctest */,
-				B57302762B001AAB00DB62EA /* TabNewsUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};

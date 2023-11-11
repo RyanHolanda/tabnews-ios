@@ -1,4 +1,0 @@
-module StringResource {
-header "StringResource-Swift.h"
-export *
-}

@@ -1,4 +1,0 @@
-module StringExtractor {
-header "StringExtractor-Swift.h"
-export *
-}

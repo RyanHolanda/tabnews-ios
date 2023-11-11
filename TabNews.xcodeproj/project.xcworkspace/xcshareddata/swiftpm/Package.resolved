@@ -1,0 +1,77 @@
+{
+  "pins" : [
+    {
+      "identity" : "cuckoo",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Brightify/Cuckoo.git",
+      "state" : {
+        "revision" : "475322e609d009c284464c886ca08cfe421137a9",
+        "version" : "1.10.3"
+      }
+    },
+    {
+      "identity" : "networkimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gonzalezreal/NetworkImage",
+      "state" : {
+        "revision" : "7aff8d1b31148d32c5933d75557d42f6323ee3d1",
+        "version" : "6.0.0"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "8f4d2753f0e4778c76d5f05ad16c74f707390531",
+        "version" : "1.2.3"
+      }
+    },
+    {
+      "identity" : "swift-markdown-ui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gonzalezreal/swift-markdown-ui",
+      "state" : {
+        "revision" : "5df8a4adedd6ae4eb2455ef60ff75183984daeb8",
+        "version" : "2.2.0"
+      }
+    },
+    {
+      "identity" : "swift-snapshot-testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-snapshot-testing",
+      "state" : {
+        "revision" : "bb0ea08db8e73324fe6c3727f755ca41a23ff2f4",
+        "version" : "1.14.2"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "74203046135342e4a4a627476dd6caf8b28fe11b",
+        "version" : "509.0.0"
+      }
+    },
+    {
+      "identity" : "viewinspector",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nalexn/ViewInspector",
+      "state" : {
+        "revision" : "07c090d73e0169c342a4ed46e9010be2781eca1e",
+        "version" : "0.9.8"
+      }
+    },
+    {
+      "identity" : "xcstrings-tool",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/liamnichols/xcstrings-tool",
+      "state" : {
+        "revision" : "888dad05feafe2982e12c039c1b075e205f615ab",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}

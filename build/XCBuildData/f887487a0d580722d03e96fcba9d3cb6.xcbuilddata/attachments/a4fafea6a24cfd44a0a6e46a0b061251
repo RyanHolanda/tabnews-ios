@@ -1,0 +1,4 @@
+module StringValidator {
+header "StringValidator-Swift.h"
+export *
+}

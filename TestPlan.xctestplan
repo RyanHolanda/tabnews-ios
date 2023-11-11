@@ -1,0 +1,48 @@
+{
+  "configurations" : [
+    {
+      "id" : "E9185360-1AC7-470F-82C9-18BF9071D02B",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "defaultTestExecutionTimeAllowance" : 60,
+    "language" : "pt-BR",
+    "locationScenario" : {
+      "identifier" : "Rio de Janeiro, Brazil",
+      "referenceType" : "built-in"
+    },
+    "maximumTestExecutionTimeAllowance" : 60,
+    "region" : "BR",
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:TabNews.xcodeproj",
+        "identifier" : "B5D8AE6C2AE58FB500F4CA21",
+        "name" : "TabNewsSnapshotTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TabNews.xcodeproj",
+        "identifier" : "B5D8AE822AE59B1400F4CA21",
+        "name" : "TabNewsUnitTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TabNews.xcodeproj",
+        "identifier" : "B5A199702AF41A5E00243A5E",
+        "name" : "TabNewsUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

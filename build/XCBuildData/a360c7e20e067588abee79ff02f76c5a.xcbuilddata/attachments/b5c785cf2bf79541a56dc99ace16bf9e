@@ -1,0 +1,4 @@
+module StringCatalog {
+header "StringCatalog-Swift.h"
+export *
+}

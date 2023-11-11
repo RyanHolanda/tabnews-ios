@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Release/SwiftSyntax509.build/Objects-normal/arm64/SwiftSyntax509-master.swiftconstvalues",
+    "dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Release/SwiftSyntax509.build/Objects-normal/arm64/SwiftSyntax509-master.d",
+    "diagnostics" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Release/SwiftSyntax509.build/Objects-normal/arm64/SwiftSyntax509-master.dia",
+    "emit-module-dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Release/SwiftSyntax509.build/Objects-normal/arm64/SwiftSyntax509-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Release/SwiftSyntax509.build/Objects-normal/arm64/SwiftSyntax509-master-emit-module.dia",
+    "swift-dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Release/SwiftSyntax509.build/Objects-normal/arm64/SwiftSyntax509-master.swiftdeps"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/swift-syntax/Sources/SwiftSyntax509/Empty.swift" : {
+    "index-unit-output-path" : "/swift-syntax.build/Release/SwiftSyntax509.build/Objects-normal/arm64/Empty.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Release/SwiftSyntax509.build/Objects-normal/arm64/Empty.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Release/SwiftSyntax509.build/Objects-normal/arm64/Empty.o"
+  }
+}

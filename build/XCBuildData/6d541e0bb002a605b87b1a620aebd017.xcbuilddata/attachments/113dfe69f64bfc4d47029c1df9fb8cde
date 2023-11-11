@@ -1,0 +1,65 @@
+{
+  "" : {
+    "const-values" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringCatalog-master.swiftconstvalues",
+    "dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringCatalog-master.d",
+    "diagnostics" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringCatalog-master.dia",
+    "emit-module-dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringCatalog-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringCatalog-master-emit-module.dia",
+    "swift-dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringCatalog-master.swiftdeps"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/StringCatalog.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringCatalog.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringCatalog.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringCatalog.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/Types/StringEntry.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringEntry.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringEntry.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringEntry.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/Types/StringExtractionState.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringExtractionState.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringExtractionState.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringExtractionState.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/Types/StringLanguage.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringLanguage.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringLanguage.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringLanguage.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/Types/StringLocalization.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringLocalization.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringLocalization.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringLocalization.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/Types/StringSubstitution.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringSubstitution.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringSubstitution.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringSubstitution.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/Types/StringUnit.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringUnit.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringUnit.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringUnit.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/Types/StringUnitState.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringUnitState.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringUnitState.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringUnitState.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/Types/StringVariation.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringVariation.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringVariation.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringVariation.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/Types/StringVariations.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringVariations.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringVariations.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/StringVariations.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringCatalog/Utilities/DictionaryWrapper.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/DictionaryWrapper.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/DictionaryWrapper.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringCatalog.build/Objects-normal/arm64/DictionaryWrapper.o"
+  }
+}

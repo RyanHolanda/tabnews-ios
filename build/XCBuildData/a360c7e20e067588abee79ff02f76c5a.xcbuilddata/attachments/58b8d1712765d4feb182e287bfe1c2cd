@@ -1,0 +1,4 @@
+module StringGenerator {
+header "StringGenerator-Swift.h"
+export *
+}

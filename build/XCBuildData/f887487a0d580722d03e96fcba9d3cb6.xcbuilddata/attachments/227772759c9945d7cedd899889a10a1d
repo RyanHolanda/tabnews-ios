@@ -1,0 +1,4 @@
+module SwiftIdentifier {
+header "SwiftIdentifier-Swift.h"
+export *
+}

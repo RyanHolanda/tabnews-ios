@@ -1,0 +1,25 @@
+{
+  "" : {
+    "const-values" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/StringResource-master.swiftconstvalues",
+    "dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/StringResource-master.d",
+    "diagnostics" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/StringResource-master.dia",
+    "emit-module-dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/StringResource-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/StringResource-master-emit-module.dia",
+    "swift-dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/StringResource-master.swiftdeps"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringResource/Argument.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/Argument.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/Argument.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/Argument.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringResource/Resource.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/Resource.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/Resource.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/Resource.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringResource/StringSegment.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/StringSegment.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/StringSegment.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringResource.build/Objects-normal/x86_64/StringSegment.o"
+  }
+}

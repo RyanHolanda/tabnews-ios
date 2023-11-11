@@ -1,0 +1,250 @@
+{
+  "sourceLanguage" : "pt-BR",
+  "strings" : {
+    "Comments" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d Comentário"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d Comentários"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Nenhum Comentário"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "DateExtensionDayAgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d dia atrás"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d dias atrás"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "DateExtensionHourAgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d hora atrás"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d horas atrás"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "DateExtensionMinuteAgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d minuto atrás"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d minutos atrás"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "DateExtensionMonthAgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d mês atrás"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d meses atrás"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "DateExtensionYearAgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d ano atrás"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d anos atrás"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "ErrorViewDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algo deu errado. Por favor, tente novamente"
+          }
+        }
+      }
+    },
+    "ErrorViewTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possivel carregar"
+          }
+        }
+      }
+    },
+    "JustNow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agora"
+          }
+        }
+      }
+    },
+    "N/A" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "N/A"
+          }
+        }
+      }
+    },
+    "RecentsViewRecents" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recentes"
+          }
+        }
+      }
+    },
+    "RelevantsViewRelevants" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relevantes"
+          }
+        }
+      }
+    },
+    "Tabcoins" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d Tabcoin"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d Tabcoins"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tryAgain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentar novamente"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

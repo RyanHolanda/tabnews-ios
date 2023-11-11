@@ -1,0 +1,25 @@
+{
+  "" : {
+    "const-values" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/StringGenerator-master.swiftconstvalues",
+    "dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/StringGenerator-master.d",
+    "diagnostics" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/StringGenerator-master.dia",
+    "emit-module-dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/StringGenerator-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/StringGenerator-master-emit-module.dia",
+    "swift-dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/StringGenerator-master.swiftdeps"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringGenerator/StringGenerator.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/StringGenerator.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/StringGenerator.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/StringGenerator.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringGenerator/SwiftSyntax/AttributeSyntax+Availability.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/AttributeSyntax+Availability.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/AttributeSyntax+Availability.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/AttributeSyntax+Availability.o"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringGenerator/SwiftSyntax/IfConfigDeclSyntax.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/IfConfigDeclSyntax.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/IfConfigDeclSyntax.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release-iphoneos/StringGenerator.build/Objects-normal/arm64/IfConfigDeclSyntax.o"
+  }
+}

@@ -1,0 +1,12 @@
+sources:
+  include:
+  - ../.
+templates:
+- /Users/holland/Documents/TabNews/.mocky9B37AC15-739A-448A-B956-5D3A32A7F122/.template.swifttemplate
+output: /Users/holland/Documents/TabNews/.mocky9B37AC15-739A-448A-B956-5D3A32A7F122/types.yaml
+args:
+  swiftyMocky:
+    import:
+    - Foundation
+    testable:
+    - TabNews

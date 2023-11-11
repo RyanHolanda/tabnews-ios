@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E44E3A80-7DF8-4FD0-B032-24971B1FF9A5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98BC87EF-B297-485B-8207-DA416130399D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNews/Screens/Content/ContentViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getContent(ownerUsername:slug:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "98BC87EF-B297-485B-8207-DA416130399D - 367509b747a32512"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TabNews.ContentViewModel.getContent(ownerUsername: Swift.String, slug: Swift.String) async -&gt; ()"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/TabNews/TabNews/Screens/Content/ContentViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "98BC87EF-B297-485B-8207-DA416130399D - 50132d18193e572d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TabNews.ContentViewModel.getContent(ownerUsername: Swift.String, slug: Swift.String) async -&gt; ()"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/TabNews/TabNews/Screens/Content/ContentViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "98BC87EF-B297-485B-8207-DA416130399D - 367509b747a32533"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TabNews.ContentViewModel.getContent(ownerUsername: Swift.String, slug: Swift.String) async -&gt; ()"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/TabNews/TabNews/Screens/Content/ContentViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "842B9087-34BB-4CB1-979C-0DBA595D9E48"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNews/Screens/Content/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72E2B15D-E55E-4D97-97BC-C578C79EF979"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNews/Screens/Content/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "288651BA-79BA-4BA3-9717-B106A1AEFD52"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNews/Screens/Content/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ContentView"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72D5D7E7-369A-467B-8DF6-BBFDDBE58525"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNews/Screens/Content/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "72D5D7E7-369A-467B-8DF6-BBFDDBE58525 - 13a03ed4748d2a1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in TabNews.ContentView.body.getter : some"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/TabNews/TabNews/Screens/Content/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "72D5D7E7-369A-467B-8DF6-BBFDDBE58525 - d4512aa0e8fe771"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in TabNews.ContentView.body.getter : some"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/TabNews/TabNews/Screens/Content/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "72D5D7E7-369A-467B-8DF6-BBFDDBE58525 - f06aedd507eaa7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in TabNews.ContentView.body.getter : some"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/TabNews/TabNews/Screens/Content/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBD1D202-2EE4-4552-A25D-A00A4C965BAB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNews/Screens/Content/ContentViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getContent(ownerUsername:slug:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

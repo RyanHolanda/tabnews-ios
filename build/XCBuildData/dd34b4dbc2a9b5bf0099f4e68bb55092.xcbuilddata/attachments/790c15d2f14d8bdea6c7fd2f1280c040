@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringValidator.build/Objects-normal/arm64/StringValidator-master.swiftconstvalues",
+    "dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringValidator.build/Objects-normal/arm64/StringValidator-master.d",
+    "diagnostics" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringValidator.build/Objects-normal/arm64/StringValidator-master.dia",
+    "emit-module-dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringValidator.build/Objects-normal/arm64/StringValidator-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringValidator.build/Objects-normal/arm64/StringValidator-master-emit-module.dia",
+    "swift-dependencies" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringValidator.build/Objects-normal/arm64/StringValidator-master.swiftdeps"
+  },
+  "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/Sources/StringValidator/ResourceValidator.swift" : {
+    "index-unit-output-path" : "/XCStringsTool.build/Release/StringValidator.build/Objects-normal/arm64/ResourceValidator.o",
+    "llvm-bc" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringValidator.build/Objects-normal/arm64/ResourceValidator.bc",
+    "object" : "/Users/holland/Library/Developer/Xcode/DerivedData/TabNews-hktpcfqvcqkhobbsbcpxewhkgmab/SourcePackages/checkouts/xcstrings-tool/build/XCStringsTool.build/Release/StringValidator.build/Objects-normal/arm64/ResourceValidator.o"
+  }
+}

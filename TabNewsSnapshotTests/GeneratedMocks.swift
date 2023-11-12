@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: TabNews/Repositories/ContentRepository.swift at 2023-11-11 8:41:22 PM +0000
+// MARK: - Mocks generated from file: TabNews/Repositories/ContentRepository.swift at 2023-11-12 8:05:53 PM +0000
 
 
 import Cuckoo
@@ -94,6 +94,26 @@ import Foundation
     }
     
     
+    
+    
+    
+     func getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO] {
+        
+    return try await cuckoo_manager.callThrows(
+    """
+    getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO]
+    """,
+            parameters: (ownerUsername, slug),
+            escapingParameters: (ownerUsername, slug),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: await __defaultImplStub!.getComments(ownerUsername: ownerUsername, slug: slug))
+        
+    }
+    
+    
 
      struct __StubbingProxy_ContentRepository: Cuckoo.StubbingProxy {
         private let cuckoo_manager: Cuckoo.MockManager
@@ -132,6 +152,17 @@ import Foundation
             return .init(stub: cuckoo_manager.createStub(for: MockContentRepository.self, method:
     """
     getPost(ownerUsername: String, slug: String) async throws -> ContentDTO
+    """, parameterMatchers: matchers))
+        }
+        
+        
+        
+        
+        func getComments<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(ownerUsername: M1, slug: M2) -> Cuckoo.ProtocolStubThrowingFunction<(String, String), [CommentDTO]> where M1.MatchedType == String, M2.MatchedType == String {
+            let matchers: [Cuckoo.ParameterMatcher<(String, String)>] = [wrap(matchable: ownerUsername) { $0.0 }, wrap(matchable: slug) { $0.1 }]
+            return .init(stub: cuckoo_manager.createStub(for: MockContentRepository.self, method:
+    """
+    getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO]
     """, parameterMatchers: matchers))
         }
         
@@ -188,6 +219,18 @@ import Foundation
         }
         
         
+        
+        
+        @discardableResult
+        func getComments<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(ownerUsername: M1, slug: M2) -> Cuckoo.__DoNotUse<(String, String), [CommentDTO]> where M1.MatchedType == String, M2.MatchedType == String {
+            let matchers: [Cuckoo.ParameterMatcher<(String, String)>] = [wrap(matchable: ownerUsername) { $0.0 }, wrap(matchable: slug) { $0.1 }]
+            return cuckoo_manager.verify(
+    """
+    getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO]
+    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+        }
+        
+        
     }
 }
 
@@ -219,6 +262,14 @@ import Foundation
     
      func getPost(ownerUsername: String, slug: String) async throws -> ContentDTO  {
         return DefaultValueRegistry.defaultValue(for: (ContentDTO).self)
+    }
+    
+    
+    
+    
+    
+     func getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO]  {
+        return DefaultValueRegistry.defaultValue(for: ([CommentDTO]).self)
     }
     
     
@@ -316,6 +367,26 @@ import Foundation
     }
     
     
+    
+    
+    
+     override func getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO] {
+        
+    return try await cuckoo_manager.callThrows(
+    """
+    getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO]
+    """,
+            parameters: (ownerUsername, slug),
+            escapingParameters: (ownerUsername, slug),
+            superclassCall:
+                
+                await super.getComments(ownerUsername: ownerUsername, slug: slug)
+                ,
+            defaultCall: await __defaultImplStub!.getComments(ownerUsername: ownerUsername, slug: slug))
+        
+    }
+    
+    
 
      struct __StubbingProxy_ContentDataRepository: Cuckoo.StubbingProxy {
         private let cuckoo_manager: Cuckoo.MockManager
@@ -354,6 +425,17 @@ import Foundation
             return .init(stub: cuckoo_manager.createStub(for: MockContentDataRepository.self, method:
     """
     getPost(ownerUsername: String, slug: String) async throws -> ContentDTO
+    """, parameterMatchers: matchers))
+        }
+        
+        
+        
+        
+        func getComments<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(ownerUsername: M1, slug: M2) -> Cuckoo.ClassStubThrowingFunction<(String, String), [CommentDTO]> where M1.MatchedType == String, M2.MatchedType == String {
+            let matchers: [Cuckoo.ParameterMatcher<(String, String)>] = [wrap(matchable: ownerUsername) { $0.0 }, wrap(matchable: slug) { $0.1 }]
+            return .init(stub: cuckoo_manager.createStub(for: MockContentDataRepository.self, method:
+    """
+    getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO]
     """, parameterMatchers: matchers))
         }
         
@@ -410,6 +492,18 @@ import Foundation
         }
         
         
+        
+        
+        @discardableResult
+        func getComments<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(ownerUsername: M1, slug: M2) -> Cuckoo.__DoNotUse<(String, String), [CommentDTO]> where M1.MatchedType == String, M2.MatchedType == String {
+            let matchers: [Cuckoo.ParameterMatcher<(String, String)>] = [wrap(matchable: ownerUsername) { $0.0 }, wrap(matchable: slug) { $0.1 }]
+            return cuckoo_manager.verify(
+    """
+    getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO]
+    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+        }
+        
+        
     }
 }
 
@@ -441,6 +535,14 @@ import Foundation
     
      override func getPost(ownerUsername: String, slug: String) async throws -> ContentDTO  {
         return DefaultValueRegistry.defaultValue(for: (ContentDTO).self)
+    }
+    
+    
+    
+    
+    
+     override func getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO]  {
+        return DefaultValueRegistry.defaultValue(for: ([CommentDTO]).self)
     }
     
     

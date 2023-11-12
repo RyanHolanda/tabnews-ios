@@ -4,6 +4,7 @@ protocol ContentRepository {
     func getRecentsPosts(page: Int, perPage: Int) async throws -> [ContentPreviewDTO]
     func getRelevantsPosts(page: Int, perPage: Int) async throws -> [ContentPreviewDTO]
     func getPost(ownerUsername: String, slug: String) async throws -> ContentDTO
+    func getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO]
 }
 
 class ContentDataRepository: ContentRepository {
@@ -27,5 +28,11 @@ class ContentDataRepository: ContentRepository {
         let post: ContentDTO = try await http.get("/contents/\(ownerUsername)/\(slug)")
 
         return post
+    }
+
+    func getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO] {
+        let comments: [CommentDTO] = try await http.get("/contents/\(ownerUsername)/\(slug)/children")
+
+        return comments
     }
 }

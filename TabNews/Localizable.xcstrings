@@ -1,6 +1,29 @@
 {
   "sourceLanguage" : "pt-BR",
   "strings" : {
+    "Answers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "needs_review",
+                  "value" : "%d Resposta"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d Respostas"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "Comments" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -26,6 +49,17 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "CommentsSectionComments" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comentários"
           }
         }
       }
@@ -189,6 +223,28 @@
         }
       }
     },
+    "NoComments" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum Comentário..."
+          }
+        }
+      }
+    },
+    "Recents" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recentes"
+          }
+        }
+      }
+    },
     "RecentsViewRecents" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -200,6 +256,17 @@
         }
       }
     },
+    "Relevants" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relevantes"
+          }
+        }
+      }
+    },
     "RelevantsViewRelevants" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -207,6 +274,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Relevantes"
+          }
+        }
+      }
+    },
+    "SeeMore" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver mais"
           }
         }
       }

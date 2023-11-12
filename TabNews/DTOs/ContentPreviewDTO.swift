@@ -1,6 +1,6 @@
 import Foundation
 
-struct ContentPreviewDTO: Codable, Identifiable {
+struct ContentPreviewDTO: DTOProtocol {
     let id: String
     let ownerId: String
     let parentId: String

@@ -11,6 +11,7 @@ struct MarkdownBody: View {
     var body: some View {
         Markdown(content)
             .markdownTheme(.custom)
+            .textSelection(.enabled)
     }
 }
 

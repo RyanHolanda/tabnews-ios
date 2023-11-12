@@ -3,15 +3,18 @@ import ViewInspector
 import XCTest
 
 final class ErrorViewUnitTest: XCTestCase {
-    func testErrorViewCallback() throws {
+    func testErrorViewCallback() async throws {
         var counter: Int = 1
 
         let view: ErrorView = .init(title: "Error", description: "Please try again") {
-            counter += 1
+            counter = 2
         }
+
         let tryAgainButton: InspectableView = try view.inspect().find(button: String(localized: .localizable.tryAgain))
         try tryAgainButton.tap()
 
-        XCTAssert(counter == 2)
+        try? await Task.sleep(nanoseconds: 100_000_000)
+
+        XCTAssertEqual(counter, 2)
     }
 }

@@ -2,6 +2,12 @@ import Foundation
 
 class PreviewMocks {
     class MockContentRepository: ContentRepository {
+        func getComments(ownerUsername _: String, slug _: String) async throws -> [CommentDTO] {
+            [
+                CommentDTO.fixture()
+            ]
+        }
+
         func getPost(ownerUsername _: String, slug _: String) async throws -> ContentDTO {
             ContentDTO.fixture()
         }

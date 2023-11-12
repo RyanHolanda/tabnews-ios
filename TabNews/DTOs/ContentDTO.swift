@@ -1,6 +1,6 @@
 import Foundation
 
-struct ContentDTO: Codable, Identifiable {
+struct ContentDTO: DTOProtocol {
     let id: String
     let ownerId: String
     let slug: String

@@ -3,29 +3,33 @@ import SwiftUI
 struct ErrorView: View {
     var title: String?
     var description: String?
-    let onTryAgain: () -> Void
+    let onTryAgain: () async -> Void
 
     var body: some View {
-        Image(systemName: "exclamationmark.circle")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 30, height: 30)
-            .foregroundStyle(.red)
+        VStack {
+            Image(systemName: "exclamationmark.circle")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 30, height: 30)
+                .foregroundStyle(.red)
 
-        Text(title ?? String(localized: .localizable.errorViewTitle))
-            .font(.title3)
-            .fontWeight(.bold)
-            .padding(.top, 20)
+            Text(title ?? String(localized: .localizable.errorViewTitle))
+                .font(.title3)
+                .fontWeight(.bold)
+                .padding(.top, 20)
 
-        Text(description ?? String(localized: .localizable.errorViewDescription))
-            .font(.subheadline)
-            .foregroundStyle(.gray)
-            .multilineTextAlignment(.center)
+            Text(description ?? String(localized: .localizable.errorViewDescription))
+                .font(.subheadline)
+                .foregroundStyle(.gray)
+                .multilineTextAlignment(.center)
 
-        Button(String(localized: .localizable.tryAgain.localizedStringResource)) {
-            onTryAgain()
+            Button(String(localized: .localizable.tryAgain.localizedStringResource)) {
+                Task {
+                    await onTryAgain()
+                }
+            }
+            .padding(.top, 10)
         }
-        .padding(.top, 10)
     }
 }
 

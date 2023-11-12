@@ -1,11 +1,10 @@
-import MarkdownUI
 import SwiftUI
 
 extension ContentView {
     static func create(slug: String, ownerUsername: String) -> ContentView {
         @Injected(\.contentRepository) var contentRepository: ContentRepository
         let viewModel: ContentViewModel = .init(contentRepository: contentRepository)
-        return ContentView(viewModel: viewModel, slug: slug, ownerUsername: ownerUsername)
+        return ContentView(viewModel: viewModel, slug: slug, ownerUsername: ownerUsername, todayDate: .now)
     }
 }
 
@@ -13,6 +12,7 @@ struct ContentView: View {
     @ObservedObject var viewModel: ContentViewModel
     let slug: String
     let ownerUsername: String
+    let todayDate: Date
 
     var body: some View {
         switch viewModel.state {
@@ -32,7 +32,7 @@ struct ContentView: View {
         default:
             ScrollView {
                 LazyVStack(alignment: .leading) {
-                    Text("\(viewModel.content.ownerUsername) • \(Date.getTimeAgo(fromISO: viewModel.content.createdAt, to: .now))")
+                    Text("\(viewModel.content.ownerUsername) • \(Date.getTimeAgo(fromISO: viewModel.content.createdAt, to: todayDate))")
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .padding(.bottom, 2)
@@ -47,17 +47,11 @@ struct ContentView: View {
                     MarkdownBody(viewModel.content.body)
                         .padding(.top, 10)
 
-                    Button {} label: {
-                        HStack {
-                            Image(systemName: "bubble")
-                            Text(.localizable.comments(viewModel.content.commentsCount))
-                                .font(.system(size: 14))
-                                .bold()
-                        }
-                    }
-                    .buttonStyle(.borderless)
-                    .padding(.top, 50)
-                    .padding(.bottom, 50)
+                    CommentsSection.create(
+                        ownerUsername: viewModel.content.ownerUsername,
+                        slug: viewModel.content.slug
+                    )
+                    .padding(.top, 70)
                 }
                 .padding()
                 .navigationBarTitleDisplayMode(.inline)
@@ -83,6 +77,11 @@ struct ContentView: View {
 
 #Preview {
     NavigationStack {
-        ContentView(viewModel: ContentViewModel(contentRepository: PreviewMocks.MockContentRepository()), slug: "", ownerUsername: "")
+        ContentView(
+            viewModel: ContentViewModel(contentRepository: PreviewMocks.MockContentRepository()),
+            slug: "",
+            ownerUsername: "",
+            todayDate: .now
+        )
     }
 }

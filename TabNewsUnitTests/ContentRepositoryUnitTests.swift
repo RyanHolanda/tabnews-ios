@@ -34,12 +34,22 @@ final class ContentRepositoryTest: XCTestCase {
 
     func testGetPost() async throws {
         stub(http!) { stub in
-            when(stub.get("/contents/username/s-l-u-g"))
+            when(stub.get(any()))
                 .thenReturn(ContentDTO.fixture())
         }
 
         let _: ContentDTO = try await sut!.getPost(ownerUsername: "username", slug: "s-l-u-g")
 
         verify(http!, times(1)).get<ContentDTO>("/contents/username/s-l-u-g").with(returnType: ContentDTO.self)
+    }
+
+    func testGetPostComments() async throws {
+        stub(http!) { stub in
+            when(stub.get(any())).thenReturn([CommentDTO.fixture()])
+        }
+
+        let _: [CommentDTO] = try await sut!.getComments(ownerUsername: "username", slug: "s-l-u-g")
+
+        verify(http!, times(1)).get<ContentDTO>("/contents/username/s-l-u-g/children").with(returnType: [CommentDTO].self)
     }
 }

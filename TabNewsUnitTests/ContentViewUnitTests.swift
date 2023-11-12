@@ -14,7 +14,7 @@ final class ContentViewUnitTests: XCTestCase {
     override func setUp() async throws {
         contentRepository = MockContentRepository()
         viewModel = .init(contentRepository: contentRepository!)
-        sut = .init(viewModel: viewModel!, slug: postSlug, ownerUsername: postOwnerUsername)
+        sut = .init(viewModel: viewModel!, slug: postSlug, ownerUsername: postOwnerUsername, todayDate: Date(year: 2017, month: 11, day: 11))
     }
 
     override func tearDown() async throws {

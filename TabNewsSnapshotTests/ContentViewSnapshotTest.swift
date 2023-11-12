@@ -12,7 +12,11 @@ class ContentViewSnapshotTest: XCTestCase {
     override func setUp() async throws {
         contentRepository = MockContentRepository()
         viewModel = .init(contentRepository: contentRepository!)
-        sut = .init(viewModel: viewModel!, slug: "SLUG", ownerUsername: "OWNER_USERNAME")
+        sut = .init(viewModel: viewModel!, slug: "SLUG", ownerUsername: "OWNER_USERNAME", todayDate: Date(year: 2017, month: 11, day: 11))
+
+        stub(contentRepository!) { stub in
+            when(stub.getComments(ownerUsername: any(), slug: any())).thenReturn([CommentDTO.fixture()])
+        }
     }
 
     override func tearDown() async throws {

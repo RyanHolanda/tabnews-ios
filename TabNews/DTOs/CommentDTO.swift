@@ -26,7 +26,7 @@ struct CommentDTO: DTOProtocol {
         case children
         case replies = "children_deep_count"
     }
-    
+
     init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<CommentDTO.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decodeIfPresent(String.self, forKey: .id) ?? ""
@@ -75,7 +75,7 @@ struct CommentDTO: DTOProtocol {
     #if DEBUG
         static func fixture() -> CommentDTO {
             CommentDTO(
-                id: "ID",
+                id: UUID().uuidString,
                 ownerId: "OWNER_ID",
                 parentId: "PARENT_ID",
                 slug: "SLUG",

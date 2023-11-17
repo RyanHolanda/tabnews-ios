@@ -4,7 +4,7 @@ class PreviewMocks {
     class MockContentRepository: ContentRepository {
         func getComments(ownerUsername _: String, slug _: String) async throws -> [CommentDTO] {
             [
-                CommentDTO.fixture()
+                CommentDTO.fixture(),
             ]
         }
 

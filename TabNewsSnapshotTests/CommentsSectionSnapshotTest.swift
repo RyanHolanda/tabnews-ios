@@ -4,7 +4,6 @@ import ViewInspector
 import XCTest
 
 @MainActor
-// Need to test comments sorting
 final class CommentsSectionSnapshotTest: XCTestCase {
     var sut: CommentsSection?
     var viewModel: CommentsSectionViewModel?
@@ -18,17 +17,17 @@ final class CommentsSectionSnapshotTest: XCTestCase {
 
     override func tearDown() async throws {
         viewModel = nil
-        repository = nil
+        sut = nil
         repository = nil
     }
 
     func testContentState() async throws {
         stub(repository!) { stub in
             when(stub.getComments(ownerUsername: any(), slug: any())).thenReturn([
-                CommentDTO.fixture(),
                 CommentDTO.fixture()
             ])
         }
+
         await viewModel?.getComments(ownerUsername: "", slug: "")
         Snapshooter.snapshot(sut, name: "comments_section")
     }
@@ -66,5 +65,38 @@ final class CommentsSectionSnapshotTest: XCTestCase {
         }
         await viewModel?.getComments(ownerUsername: "", slug: "")
         Snapshooter.snapshot(sut, name: "comments_section_text_shrank")
+    }
+
+    func testContentStateWithSortedCommentsByRecent() async throws {
+        stub(repository!) { stub in
+            when(stub.getComments(ownerUsername: any(), slug: any())).thenReturn([
+                CommentDTO.fixture().copyWith(id: "LATER", body: "Later Comment", publishedAt: "2010-11-24T22:21:17.146Z"),
+                CommentDTO.fixture().copyWith(id: "EARLIER", body: "Earlier Comment", publishedAt: "2010-11-25T22:21:17.146Z")
+            ])
+        }
+
+        await viewModel?.getComments(ownerUsername: "", slug: "")
+        let sortByButton: InspectableView = try sut!.inspect().find(button: CommentsSectionListOrder.recents.label)
+        try sortByButton.tap()
+        Snapshooter.snapshot(sut, name: "comments_section_sorted_by_recent")
+        XCTAssertEqual(viewModel?.comments.first?.id, "EARLIER")
+    }
+
+    func testContentStateWithSortedCommentsByRelevantsFromSortedByRecent() async throws {
+        stub(repository!) { stub in
+            when(stub.getComments(ownerUsername: any(), slug: any())).thenReturn([
+                CommentDTO.fixture().copyWith(body: "Less Relevant Comment", tabcoins: 50),
+                CommentDTO.fixture().copyWith(body: "Unrelevant Comment", tabcoins: 0),
+                CommentDTO.fixture().copyWith(id: "RELEVANT", body: "Relevant Comment", tabcoins: 200)
+            ])
+        }
+
+        await viewModel?.getComments(ownerUsername: "", slug: "")
+        let sortRecentsByButton: InspectableView = try sut!.inspect().find(button: CommentsSectionListOrder.recents.label)
+        try sortRecentsByButton.tap()
+        let sortByRelevantsButton: InspectableView = try sut!.inspect().find(button: CommentsSectionListOrder.relevants.label)
+        try sortByRelevantsButton.tap()
+        Snapshooter.snapshot(sut, name: "comments_section_sorted_by_relevants")
+        XCTAssertEqual(viewModel?.comments.first?.id, "RELEVANT")
     }
 }

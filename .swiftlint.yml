@@ -15,7 +15,7 @@ excluded:
 - "*/GeneratedMocks.swift"
 
 line_length:
-    warning: 150
+    warning: 181
     error: 200
     ignores_function_declarations: true
     ignores_comments: true

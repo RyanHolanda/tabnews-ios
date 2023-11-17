@@ -226,5 +226,101 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF3C8C1E-E0B2-4CA3-AD85-A0615FC68AAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNews/Screens/Content/CommentsSection/CommentsSectionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "sortComments(by:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BF3C8C1E-E0B2-4CA3-AD85-A0615FC68AAC - 76facec19ce2d2ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TabNews.CommentsSectionViewModel.sortComments(by: TabNews.CommentsSectionListOrder) -&gt; ()"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/Personal%20Projects/tabnews-ios/TabNews/Screens/Content/CommentsSection/CommentsSectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "BF3C8C1E-E0B2-4CA3-AD85-A0615FC68AAC - 11543224b1150cc6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TabNews.CommentDTO, TabNews.CommentDTO) -&gt; Swift.Bool in TabNews.CommentsSectionViewModel.sortComments(by: TabNews.CommentsSectionListOrder) -&gt; ()"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/Personal%20Projects/tabnews-ios/TabNews/Screens/Content/CommentsSection/CommentsSectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A4D0808-74F3-46A6-993C-F0374236E67B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNews/Screens/Content/CommentsSection/CommentsSectionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "sortComments(by:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD731EB0-DC1B-4B82-A042-8710FF17279C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNews/Screens/Content/CommentsSection/CommentsSectionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "sortComments(by:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4422CBE-D423-4942-9EDB-197577756AC0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNews/Screens/Content/CommentsSection/CommentsSectionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "sortComments(by:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

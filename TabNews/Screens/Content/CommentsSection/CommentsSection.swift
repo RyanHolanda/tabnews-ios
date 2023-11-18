@@ -52,7 +52,7 @@ struct CommentsSection: View {
                     .padding(.top, 25)
                     .frame(maxWidth: .infinity, alignment: .center)
                     .task {
-                        try? await Task.sleep(nanoseconds: 1_500_000_000)
+                        try? await Task.sleep(nanoseconds: 1500000000)
                         await viewModel.getComments(ownerUsername: ownerUsername, slug: slug)
                     }
 

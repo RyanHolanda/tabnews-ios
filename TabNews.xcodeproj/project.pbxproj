@@ -30,6 +30,8 @@
 		B5669A3F2AFFD4DE00953E49 /* MarkdownBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5669A3E2AFFD4DE00953E49 /* MarkdownBody.swift */; };
 		B5669A442AFFD62B00953E49 /* MarkdownTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5669A432AFFD62B00953E49 /* MarkdownTheme.swift */; };
 		B5669A462B0006D100953E49 /* ContentViewUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5669A452B0006D100953E49 /* ContentViewUnitTests.swift */; };
+		B56B1D842B0905CA00D00A21 /* .swiftformat in Resources */ = {isa = PBXBuildFile; fileRef = B56B1D832B0905CA00D00A21 /* .swiftformat */; };
+		B56B1D8C2B09066E00D00A21 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B1D8B2B09066E00D00A21 /* Empty.swift */; };
 		B58CB1472B01554C008B92F5 /* CommentsSectionSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CB1462B01554C008B92F5 /* CommentsSectionSnapshotTest.swift */; };
 		B58CB14D2B015B25008B92F5 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = B58CB14C2B015B25008B92F5 /* ViewInspector */; };
 		B5910EDC2AE1DEE7000E00D5 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5910EDB2AE1DEE7000E00D5 /* ContentRepository.swift */; };
@@ -120,16 +122,19 @@
 		B5669A3E2AFFD4DE00953E49 /* MarkdownBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownBody.swift; sourceTree = "<group>"; };
 		B5669A432AFFD62B00953E49 /* MarkdownTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTheme.swift; sourceTree = "<group>"; };
 		B5669A452B0006D100953E49 /* ContentViewUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewUnitTests.swift; sourceTree = "<group>"; };
+		B56B1D702B081D4400D00A21 /* TabNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56B1D712B081D4400D00A21 /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsSnapshotTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsSnapshotTests.xctest"; sourceTree = "<absolute>"; };
+		B56B1D722B081D4400D00A21 /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUnitTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsUnitTests.xctest"; sourceTree = "<absolute>"; };
+		B56B1D732B081D4400D00A21 /* TabNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUITests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug-iphoneos/TabNewsUITests.xctest"; sourceTree = "<absolute>"; };
+		B56B1D782B081E7F00D00A21 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		B56B1D832B0905CA00D00A21 /* .swiftformat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
+		B56B1D8B2B09066E00D00A21 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		B57302772B001AD600DB62EA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B58CB1392B011962008B92F5 /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsSnapshotTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsSnapshotTests.xctest"; sourceTree = "<absolute>"; };
-		B58CB13A2B011962008B92F5 /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUnitTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsUnitTests.xctest"; sourceTree = "<absolute>"; };
-		B58CB13B2B011962008B92F5 /* TabNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUITests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug-iphoneos/TabNewsUITests.xctest"; sourceTree = "<absolute>"; };
 		B58CB1462B01554C008B92F5 /* CommentsSectionSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsSectionSnapshotTest.swift; sourceTree = "<group>"; };
 		B5910EDB2AE1DEE7000E00D5 /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
 		B5910EDE2AE1E066000E00D5 /* ContentPreviewDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPreviewDTO.swift; sourceTree = "<group>"; };
 		B5910EE12AE1E8F6000E00D5 /* RecentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsViewModel.swift; sourceTree = "<group>"; };
 		B5910EE62AE1EC8F000E00D5 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
-		B5A199642AF40AAE00243A5E /* TabNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TabNews.app; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug-iphoneos/TabNews.app"; sourceTree = "<absolute>"; };
 		B5A199682AF40AFD00243A5E /* PreviewMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocks.swift; sourceTree = "<group>"; };
 		B5A1998C2AF4250F00243A5E /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		B5A199972AF4310800243A5E /* UITestElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestElements.swift; sourceTree = "<group>"; };
@@ -209,11 +214,14 @@
 				B57302772B001AD600DB62EA /* .gitignore */,
 				B5210B772AEECBDD00B18B96 /* Makefile */,
 				B5633BC92AE172C900A3BE16 /* .swiftlint.yml */,
+				B56B1D832B0905CA00D00A21 /* .swiftformat */,
 				B5D8AE8C2AE59C9F00F4CA21 /* TestPlan.xctestplan */,
+				B56B1D772B081E7500D00A21 /* BuildTools */,
 				B5633BB02AE1715A00A3BE16 /* TabNews */,
 				B5D8AE6E2AE58FB500F4CA21 /* TabNewsSnapshotTests */,
 				B5D8AE842AE59B1400F4CA21 /* TabNewsUnitTests */,
 				B5A199722AF41A5E00243A5E /* TabNewsUITests */,
+				B56B1D702B081D4400D00A21 /* TabNews.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +274,15 @@
 				B5CE78972B0067C500241606 /* ExpandableMarkdownBody.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		B56B1D772B081E7500D00A21 /* BuildTools */ = {
+			isa = PBXGroup;
+			children = (
+				B56B1D782B081E7F00D00A21 /* Package.swift */,
+				B56B1D8B2B09066E00D00A21 /* Empty.swift */,
+			);
+			path = BuildTools;
 			sourceTree = "<group>";
 		};
 		B5910EDA2AE1DE57000E00D5 /* Repositories */ = {
@@ -409,6 +426,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5633BBC2AE1715B00A3BE16 /* Build configuration list for PBXNativeTarget "TabNews" */;
 			buildPhases = (
+				B56B1D7B2B081EAC00D00A21 /* SwiftFormat */,
 				B5633BC82AE171ED00A3BE16 /* SwiftLint */,
 				B5633BAA2AE1715A00A3BE16 /* Sources */,
 				B5633BAB2AE1715A00A3BE16 /* Frameworks */,
@@ -425,7 +443,7 @@
 				B5D1E7792AFC4A8800B83391 /* MarkdownUI */,
 			);
 			productName = TabNews;
-			productReference = B5A199642AF40AAE00243A5E /* TabNews.app */;
+			productReference = B56B1D702B081D4400D00A21 /* TabNews.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B5A199702AF41A5E00243A5E /* TabNewsUITests */ = {
@@ -443,7 +461,7 @@
 			);
 			name = TabNewsUITests;
 			productName = TabNewsUITests;
-			productReference = B58CB13B2B011962008B92F5 /* TabNewsUITests.xctest */;
+			productReference = B56B1D732B081D4400D00A21 /* TabNewsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		B5D8AE6C2AE58FB500F4CA21 /* TabNewsSnapshotTests */ = {
@@ -470,7 +488,7 @@
 				B58CB14C2B015B25008B92F5 /* ViewInspector */,
 			);
 			productName = TabNewsSnapshotTests;
-			productReference = B58CB1392B011962008B92F5 /* TabNewsSnapshotTests.xctest */;
+			productReference = B56B1D712B081D4400D00A21 /* TabNewsSnapshotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		B5D8AE822AE59B1400F4CA21 /* TabNewsUnitTests */ = {
@@ -494,7 +512,7 @@
 				B556C6942AEB0DD00091527A /* Cuckoo */,
 			);
 			productName = TabNewsUnitTests;
-			productReference = B58CB13A2B011962008B92F5 /* TabNewsUnitTests.xctest */;
+			productReference = B56B1D722B081D4400D00A21 /* TabNewsUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -557,6 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56B1D842B0905CA00D00A21 /* .swiftformat in Resources */,
 				B5633BCA2AE172C900A3BE16 /* .swiftlint.yml in Resources */,
 				B5633BB92AE1715B00A3BE16 /* Preview Assets.xcassets in Resources */,
 				B5D8AE672AE58A8F00F4CA21 /* Localizable.xcstrings in Resources */,
@@ -648,6 +667,25 @@
 			shellPath = /bin/sh;
 			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		B56B1D7B2B081EAC00D00A21 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd BuildTools\nSDKROOT=(xcrun --sdk macosx --show-sdk-path)\nswift run -c release swiftformat \"$SRCROOT\" --swiftversion 5.9\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -672,6 +710,7 @@
 				B5CE78882B0024EB00241606 /* CommentCard.swift in Sources */,
 				B5633BB22AE1715A00A3BE16 /* TabNewsApp.swift in Sources */,
 				B5D8AEB92AE5D0B600F4CA21 /* HTTP.swift in Sources */,
+				B56B1D8C2B09066E00D00A21 /* Empty.swift in Sources */,
 				B5D8AEB02AE5CAAD00F4CA21 /* Logger.swift in Sources */,
 				B5D1E7822AFC87FE00B83391 /* StringExtension.swift in Sources */,
 				B5DEE4632AF80CA10094D926 /* ContentDTO.swift in Sources */,

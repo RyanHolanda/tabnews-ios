@@ -8,7 +8,7 @@
 --classthreshold 0
 --closingparen balanced
 --closurevoid remove
---commas always
+--commas inline
 --conflictmarkers reject
 --decimalgrouping none
 --elseposition same-line
@@ -50,7 +50,7 @@
 --organizetypes actor,class,enum,struct
 --patternlet hoist
 --ranges spaced
---redundanttype infer-locals-only
+--redundanttype explicit
 --self init-only
 --selfrequired 
 --semicolons never

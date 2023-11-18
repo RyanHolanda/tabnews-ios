@@ -18,7 +18,7 @@ struct ExpandableMarkdownBody: View {
                         GeometryReader(content: { proxy in
                             Color.clear
                                 .onAppear {
-                                    self.contentHeight = proxy.size.height
+                                    contentHeight = proxy.size.height
                                     if contentHeight < 150 {
                                         isExpanded = true
                                     }

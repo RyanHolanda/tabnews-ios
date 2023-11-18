@@ -35,16 +35,16 @@ struct ContentDTO: DTOProtocol {
 
     init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<ContentDTO.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decodeIfPresent(String.self, forKey: .id) ?? UUID().uuidString
-        ownerId = try container.decodeIfPresent(String.self, forKey: .ownerId) ?? ""
-        slug = try container.decodeIfPresent(String.self, forKey: .slug) ?? ""
-        title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
-        body = try container.decodeIfPresent(String.self, forKey: .body) ?? ""
-        tabcoins = try container.decodeIfPresent(Int.self, forKey: .tabcoins) ?? 0
-        createdAt = try container.decodeIfPresent(String.self, forKey: .createdAt) ?? ""
-        updatedAt = try container.decodeIfPresent(String.self, forKey: .updatedAt) ?? ""
-        ownerUsername = try container.decodeIfPresent(String.self, forKey: .ownerUsername) ?? ""
-        commentsCount = try container.decodeIfPresent(Int.self, forKey: .commentsCount) ?? 0
+        self.id = try container.decodeIfPresent(String.self, forKey: .id) ?? UUID().uuidString
+        self.ownerId = try container.decodeIfPresent(String.self, forKey: .ownerId) ?? ""
+        self.slug = try container.decodeIfPresent(String.self, forKey: .slug) ?? ""
+        self.title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
+        self.body = try container.decodeIfPresent(String.self, forKey: .body) ?? ""
+        self.tabcoins = try container.decodeIfPresent(Int.self, forKey: .tabcoins) ?? 0
+        self.createdAt = try container.decodeIfPresent(String.self, forKey: .createdAt) ?? ""
+        self.updatedAt = try container.decodeIfPresent(String.self, forKey: .updatedAt) ?? ""
+        self.ownerUsername = try container.decodeIfPresent(String.self, forKey: .ownerUsername) ?? ""
+        self.commentsCount = try container.decodeIfPresent(Int.self, forKey: .commentsCount) ?? 0
     }
 
     static func empty() -> ContentDTO {

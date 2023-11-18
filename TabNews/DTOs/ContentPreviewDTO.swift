@@ -35,19 +35,19 @@ struct ContentPreviewDTO: DTOProtocol {
 
     init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<ContentPreviewDTO.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decodeIfPresent(String.self, forKey: .id) ?? UUID().uuidString
-        ownerId = try container.decodeIfPresent(String.self, forKey: .ownerId) ?? ""
-        parentId = try container.decodeIfPresent(String.self, forKey: .parentId) ?? ""
-        slug = try container.decodeIfPresent(String.self, forKey: .slug) ?? ""
-        title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
-        publishedAt = try container.decodeIfPresent(String.self, forKey: .publishedAt) ?? ""
-        ownerUsername = try container.decodeIfPresent(String.self, forKey: .ownerUsername) ?? ""
-        tabcoins = try container.decodeIfPresent(Int.self, forKey: .tabcoins) ?? 0
-        comentsCount = try container.decodeIfPresent(Int.self, forKey: .comentsCount) ?? 0
+        self.id = try container.decodeIfPresent(String.self, forKey: .id) ?? UUID().uuidString
+        self.ownerId = try container.decodeIfPresent(String.self, forKey: .ownerId) ?? ""
+        self.parentId = try container.decodeIfPresent(String.self, forKey: .parentId) ?? ""
+        self.slug = try container.decodeIfPresent(String.self, forKey: .slug) ?? ""
+        self.title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
+        self.publishedAt = try container.decodeIfPresent(String.self, forKey: .publishedAt) ?? ""
+        self.ownerUsername = try container.decodeIfPresent(String.self, forKey: .ownerUsername) ?? ""
+        self.tabcoins = try container.decodeIfPresent(Int.self, forKey: .tabcoins) ?? 0
+        self.comentsCount = try container.decodeIfPresent(Int.self, forKey: .comentsCount) ?? 0
     }
 
     static func empty() -> ContentPreviewDTO {
-        return ContentPreviewDTO(
+        ContentPreviewDTO(
             id: "",
             ownerId: "",
             parentId: "",
@@ -62,7 +62,7 @@ struct ContentPreviewDTO: DTOProtocol {
 
     #if DEBUG
         static func fixture() -> ContentPreviewDTO {
-            return ContentPreviewDTO(
+            ContentPreviewDTO(
                 id: "id",
                 ownerId: "owner_id",
                 parentId: "parent_id",

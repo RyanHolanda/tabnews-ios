@@ -29,17 +29,17 @@ struct CommentDTO: DTOProtocol {
 
     init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<CommentDTO.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decodeIfPresent(String.self, forKey: .id) ?? ""
-        ownerId = try container.decodeIfPresent(String.self, forKey: .ownerId) ?? ""
-        parentId = try container.decodeIfPresent(String.self, forKey: .parentId) ?? ""
-        slug = try container.decodeIfPresent(String.self, forKey: .slug) ?? ""
-        body = try container.decodeIfPresent(String.self, forKey: .body) ?? ""
-        publishedAt = try container.decodeIfPresent(String.self, forKey: .publishedAt) ?? ""
-        updatedAt = try container.decodeIfPresent(String.self, forKey: .updatedAt) ?? ""
-        ownerUsername = try container.decodeIfPresent(String.self, forKey: .ownerUsername) ?? ""
-        tabcoins = try container.decodeIfPresent(Int.self, forKey: .tabcoins) ?? 0
-        children = try container.decodeIfPresent([CommentDTO].self, forKey: .children) ?? []
-        replies = try container.decodeIfPresent(Int.self, forKey: .replies) ?? 0
+        self.id = try container.decodeIfPresent(String.self, forKey: .id) ?? ""
+        self.ownerId = try container.decodeIfPresent(String.self, forKey: .ownerId) ?? ""
+        self.parentId = try container.decodeIfPresent(String.self, forKey: .parentId) ?? ""
+        self.slug = try container.decodeIfPresent(String.self, forKey: .slug) ?? ""
+        self.body = try container.decodeIfPresent(String.self, forKey: .body) ?? ""
+        self.publishedAt = try container.decodeIfPresent(String.self, forKey: .publishedAt) ?? ""
+        self.updatedAt = try container.decodeIfPresent(String.self, forKey: .updatedAt) ?? ""
+        self.ownerUsername = try container.decodeIfPresent(String.self, forKey: .ownerUsername) ?? ""
+        self.tabcoins = try container.decodeIfPresent(Int.self, forKey: .tabcoins) ?? 0
+        self.children = try container.decodeIfPresent([CommentDTO].self, forKey: .children) ?? []
+        self.replies = try container.decodeIfPresent(Int.self, forKey: .replies) ?? 0
     }
 
     init(id: String, ownerId: String, parentId: String, slug: String, body: String, publishedAt: String, updatedAt: String, ownerUsername: String, tabcoins: Int, children: [CommentDTO], replies: Int) {

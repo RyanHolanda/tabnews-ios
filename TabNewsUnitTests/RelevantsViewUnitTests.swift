@@ -25,7 +25,7 @@ class RelevantsViewUnitTests: XCTestCase {
         let tryAgainButton: InspectableView = try sut!.inspect().find(button: String(localized: .localizable.tryAgain))
         try tryAgainButton.tap()
 
-        try await Task.sleep(nanoseconds: 100_000)
+        try await Task.sleep(nanoseconds: 100000)
 
         verify(contentRepository, times(2)).getRelevantsPosts(page: any(), perPage: any()).with(returnType: [ContentPreviewDTO].self)
     }

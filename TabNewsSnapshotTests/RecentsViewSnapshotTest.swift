@@ -13,24 +13,28 @@ class RecentsViewSnapshotTest: XCTestCase {
         stub(contentRepository) { stub in
             when(stub.getRecentsPosts(page: any(), perPage: any())).thenReturn([
                 ContentPreviewDTO.fixture(),
-                ContentPreviewDTO(id: ContentPreviewDTO.fixture().id,
-                                  ownerId: ContentPreviewDTO.fixture().ownerId,
-                                  parentId: ContentPreviewDTO.fixture().parentId,
-                                  slug: ContentPreviewDTO.fixture().slug,
-                                  title: ContentPreviewDTO.fixture().title,
-                                  publishedAt: ContentPreviewDTO.fixture().publishedAt,
-                                  ownerUsername: ContentPreviewDTO.fixture().ownerUsername,
-                                  tabcoins: ContentPreviewDTO.fixture().tabcoins,
-                                  comentsCount: 2),
-                ContentPreviewDTO(id: ContentPreviewDTO.fixture().id,
-                                  ownerId: ContentPreviewDTO.fixture().ownerId,
-                                  parentId: ContentPreviewDTO.fixture().parentId,
-                                  slug: ContentPreviewDTO.fixture().slug,
-                                  title: ContentPreviewDTO.fixture().title,
-                                  publishedAt: ContentPreviewDTO.fixture().publishedAt,
-                                  ownerUsername: ContentPreviewDTO.fixture().ownerUsername,
-                                  tabcoins: ContentPreviewDTO.fixture().tabcoins,
-                                  comentsCount: 1)
+                ContentPreviewDTO(
+                    id: ContentPreviewDTO.fixture().id,
+                    ownerId: ContentPreviewDTO.fixture().ownerId,
+                    parentId: ContentPreviewDTO.fixture().parentId,
+                    slug: ContentPreviewDTO.fixture().slug,
+                    title: ContentPreviewDTO.fixture().title,
+                    publishedAt: ContentPreviewDTO.fixture().publishedAt,
+                    ownerUsername: ContentPreviewDTO.fixture().ownerUsername,
+                    tabcoins: ContentPreviewDTO.fixture().tabcoins,
+                    comentsCount: 2
+                ),
+                ContentPreviewDTO(
+                    id: ContentPreviewDTO.fixture().id,
+                    ownerId: ContentPreviewDTO.fixture().ownerId,
+                    parentId: ContentPreviewDTO.fixture().parentId,
+                    slug: ContentPreviewDTO.fixture().slug,
+                    title: ContentPreviewDTO.fixture().title,
+                    publishedAt: ContentPreviewDTO.fixture().publishedAt,
+                    ownerUsername: ContentPreviewDTO.fixture().ownerUsername,
+                    tabcoins: ContentPreviewDTO.fixture().tabcoins,
+                    comentsCount: 1
+                )
             ])
         }
 

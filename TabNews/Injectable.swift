@@ -47,7 +47,7 @@ class InjectedValues {
 struct Injected<T> {
     let key: KeyPath<InjectedValues, T>
     var wrappedValue: T {
-        return InjectedValues[key]
+        InjectedValues[key]
     }
 
     init(_ key: KeyPath<InjectedValues, T>) {

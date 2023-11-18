@@ -13,6 +13,7 @@ excluded:
 - Pods
 - SwiftLint/Common/3rdPartyLib
 - "*/GeneratedMocks.swift"
+- "BuildTools"
 
 line_length:
     warning: 181

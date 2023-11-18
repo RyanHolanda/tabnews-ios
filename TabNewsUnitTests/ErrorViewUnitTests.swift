@@ -13,7 +13,7 @@ final class ErrorViewUnitTest: XCTestCase {
         let tryAgainButton: InspectableView = try view.inspect().find(button: String(localized: .localizable.tryAgain))
         try tryAgainButton.tap()
 
-        try? await Task.sleep(nanoseconds: 100_000_000)
+        try? await Task.sleep(nanoseconds: 100000000)
 
         XCTAssertEqual(counter, 2)
     }

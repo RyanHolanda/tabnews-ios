@@ -2,12 +2,12 @@ import SwiftUI
 
 struct CommentCard: View {
     let comment: CommentDTO
-    let todayDate: Date
+    @Injected("date.now") var nowDate: Date
 
     var body: some View {
         VStack(alignment: .leading) {
             Text("""
-            \(comment.ownerUsername) • \(Date.getTimeAgo(fromISO: comment.publishedAt, to: todayDate)) • \(.localizable.tabcoins(comment.tabcoins))
+            \(comment.ownerUsername) • \(Date.getTimeAgo(fromISO: comment.publishedAt, to: nowDate)) • \(.localizable.tabcoins(comment.tabcoins))
             """)
             .foregroundStyle(.gray)
             .font(.system(size: 14))
@@ -31,5 +31,5 @@ struct CommentCard: View {
 }
 
 #Preview {
-    CommentCard(comment: CommentDTO.fixture().copyWith(replies: 29), todayDate: .now)
+    CommentCard(comment: CommentDTO.fixture().copyWith(replies: 29))
 }

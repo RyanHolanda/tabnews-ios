@@ -2,13 +2,20 @@ import Cuckoo
 @testable import TabNews
 import XCTest
 
-@MainActor
-class RelevantsViewSnapshotTest: XCTestCase {
+@MainActor class RelevantsViewSnapshotTest: XCTestCase {
     var contentRepository: MockContentRepository = .init()
     var viewModel: RelevantsViewModel?
     var sut: RelevantsView?
 
     override func setUp() async throws {
+        InjectionService.shared.registerFactory(instanceName: "date.now") {
+            Date(year: 2017, month: 11, day: 11)
+        }
+
+        InjectionService.shared.registerFactory {
+            self.contentRepository as ContentRepository
+        }
+
         stub(contentRepository) { stub in
             when(stub.getRelevantsPosts(page: any(), perPage: any())).thenReturn([
                 ContentPreviewDTO.fixture(),
@@ -17,7 +24,11 @@ class RelevantsViewSnapshotTest: XCTestCase {
         }
 
         viewModel = .init(repository: contentRepository)
-        sut = .init(viewModel: viewModel!, todayDate: Date(year: 2017, month: 11, day: 11))
+        sut = .init(viewModel: viewModel!)
+    }
+
+    override func tearDown() async throws {
+        InjectionService.shared.reset()
     }
 
     func testContentView() async throws {
@@ -36,7 +47,7 @@ class RelevantsViewSnapshotTest: XCTestCase {
         }
 
         let viewModel: RelevantsViewModel = .init(repository: contentRepository)
-        let sut: RelevantsView = .init(viewModel: viewModel, todayDate: Date(year: 2017, month: 11, day: 11))
+        let sut: RelevantsView = .init(viewModel: viewModel)
 
         while viewModel.state != .error {
             try await Task.sleep(nanoseconds: 1)
@@ -52,7 +63,7 @@ class RelevantsViewSnapshotTest: XCTestCase {
         }
 
         viewModel = .init(repository: contentRepository)
-        sut = .init(viewModel: viewModel!, todayDate: Date(year: 2017, month: 11, day: 11))
+        sut = .init(viewModel: viewModel!)
 
         while viewModel?.state != .loading {
             try await Task.sleep(nanoseconds: 1)

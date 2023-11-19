@@ -6,8 +6,7 @@ enum ContentViewState {
     case error
 }
 
-@MainActor
-class ContentViewModel: ObservableObject {
+@MainActor class ContentViewModel: ObservableObject {
     init(contentRepository: ContentRepository) {
         self.contentRepository = contentRepository
     }

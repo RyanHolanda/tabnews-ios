@@ -10,8 +10,7 @@ enum RelevantsViewState {
     case refreshed
 }
 
-@MainActor
-class RelevantsViewModel: ObservableObject {
+@MainActor class RelevantsViewModel: ObservableObject {
     init(repository: ContentRepository) {
         self.repository = repository
     }

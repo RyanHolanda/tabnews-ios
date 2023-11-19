@@ -2,17 +2,17 @@ import SwiftUI
 
 extension ContentView {
     static func create(slug: String, ownerUsername: String) -> ContentView {
-        @Injected(\.contentRepository) var contentRepository: ContentRepository
+        @Injected var contentRepository: ContentRepository
         let viewModel: ContentViewModel = .init(contentRepository: contentRepository)
-        return ContentView(viewModel: viewModel, slug: slug, ownerUsername: ownerUsername, todayDate: .now)
+        return ContentView(viewModel: viewModel, slug: slug, ownerUsername: ownerUsername)
     }
 }
 
 struct ContentView: View {
     @ObservedObject var viewModel: ContentViewModel
+    @Injected("date.now") var nowDate: Date
     let slug: String
     let ownerUsername: String
-    let todayDate: Date
 
     var body: some View {
         switch viewModel.state {
@@ -32,7 +32,7 @@ struct ContentView: View {
         default:
             ScrollView {
                 LazyVStack(alignment: .leading) {
-                    Text("\(viewModel.content.ownerUsername) • \(Date.getTimeAgo(fromISO: viewModel.content.createdAt, to: todayDate))")
+                    Text("\(viewModel.content.ownerUsername) • \(Date.getTimeAgo(fromISO: viewModel.content.createdAt, to: nowDate))")
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .padding(.bottom, 2)
@@ -80,8 +80,7 @@ struct ContentView: View {
         ContentView(
             viewModel: ContentViewModel(contentRepository: PreviewMocks.MockContentRepository()),
             slug: "",
-            ownerUsername: "",
-            todayDate: .now
+            ownerUsername: ""
         )
     }
 }

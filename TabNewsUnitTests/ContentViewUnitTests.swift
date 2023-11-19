@@ -3,28 +3,33 @@ import Cuckoo
 import ViewInspector
 import XCTest
 
-@MainActor
-final class ContentViewUnitTests: XCTestCase {
+@MainActor final class ContentViewUnitTests: XCTestCase {
     var sut: ContentView?
     var viewModel: ContentViewModel?
-    var contentRepository: MockContentRepository?
+    let contentRepository: MockContentRepository = .init()
     let postSlug: String = "SLUG"
     let postOwnerUsername: String = "OWNER_USERNAME"
 
     override func setUp() async throws {
-        contentRepository = MockContentRepository()
-        viewModel = .init(contentRepository: contentRepository!)
-        sut = .init(viewModel: viewModel!, slug: postSlug, ownerUsername: postOwnerUsername, todayDate: Date(year: 2017, month: 11, day: 11))
+        InjectionService.shared.registerFactory(instanceName: "date.now") {
+            Date(year: 2017, month: 11, day: 11)
+        }
+
+        InjectionService.shared.registerFactory {
+            self.contentRepository as ContentRepository
+        }
+        viewModel = .init(contentRepository: contentRepository)
+        sut = .init(viewModel: viewModel!, slug: postSlug, ownerUsername: postOwnerUsername)
     }
 
     override func tearDown() async throws {
         sut = nil
         viewModel = nil
-        contentRepository = nil
+        InjectionService.shared.reset()
     }
 
     func testErrorStateRetry() async throws {
-        stub(contentRepository!) { stub in
+        stub(contentRepository) { stub in
             when(stub.getPost(ownerUsername: any(), slug: any())).thenThrow(HTTP.HTTPError.responseError)
         }
         await viewModel?.getContent(ownerUsername: postOwnerUsername, slug: postSlug)
@@ -34,6 +39,6 @@ final class ContentViewUnitTests: XCTestCase {
 
         try await Task.sleep(nanoseconds: 100000)
 
-        verify(contentRepository!, times(2)).getPost(ownerUsername: postOwnerUsername, slug: postSlug)
+        verify(contentRepository, times(2)).getPost(ownerUsername: postOwnerUsername, slug: postSlug)
     }
 }

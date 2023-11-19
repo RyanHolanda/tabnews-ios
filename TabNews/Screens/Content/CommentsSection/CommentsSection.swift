@@ -2,11 +2,9 @@ import SwiftUI
 
 extension CommentsSection {
     static func create(ownerUsername: String, slug: String) -> CommentsSection {
-        @Injected(\.contentRepository) var contentRepository: ContentRepository
+        @Injected var contentRepository: ContentRepository
         return CommentsSection(
             viewModel: CommentsSectionViewModel(repository: contentRepository),
-
-            todayDate: .now,
             ownerUsername: ownerUsername,
             slug: slug
         )
@@ -15,7 +13,6 @@ extension CommentsSection {
 
 struct CommentsSection: View {
     @ObservedObject var viewModel: CommentsSectionViewModel
-    let todayDate: Date
     let ownerUsername: String
     let slug: String
 
@@ -66,7 +63,7 @@ struct CommentsSection: View {
             case .success:
                 LazyVStack(alignment: .leading) {
                     ForEach(viewModel.comments) { comment in
-                        CommentCard(comment: comment, todayDate: todayDate)
+                        CommentCard(comment: comment)
                             .padding(.vertical, 10)
                         Divider()
                     }
@@ -96,7 +93,6 @@ struct CommentsSection: View {
 #Preview {
     CommentsSection(
         viewModel: CommentsSectionViewModel(repository: PreviewMocks.MockContentRepository()),
-        todayDate: .now,
         ownerUsername: "",
         slug: ""
     ).padding()

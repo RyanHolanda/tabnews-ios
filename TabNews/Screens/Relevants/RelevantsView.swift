@@ -2,19 +2,17 @@ import SwiftUI
 
 extension RelevantsView {
     static func create() -> RelevantsView {
-        @Injected(\.contentRepository) var repository: ContentRepository
+        @Injected var repository: ContentRepository
         let viewModel: RelevantsViewModel = .init(repository: repository)
-        return RelevantsView(viewModel: viewModel, todayDate: Date.now)
+        return RelevantsView(viewModel: viewModel)
     }
 }
 
 struct RelevantsView: View {
     @ObservedObject var viewModel: RelevantsViewModel
-    let todayDate: Date
 
-    init(viewModel: RelevantsViewModel, todayDate: Date) {
+    init(viewModel: RelevantsViewModel) {
         self.viewModel = viewModel
-        self.todayDate = todayDate
         Task {
             await viewModel.fetchRelevantsPosts()
         }
@@ -37,8 +35,7 @@ struct RelevantsView: View {
                 }
             default: PostsList(
                     posts: viewModel.posts,
-                    shouldPaginate: viewModel.hasMoreItems && !viewModel.posts.isEmpty,
-                    todayDate: todayDate
+                    shouldPaginate: viewModel.hasMoreItems && !viewModel.posts.isEmpty
                 ) {
                     await viewModel.paginateData()
                 }
@@ -52,5 +49,5 @@ struct RelevantsView: View {
 }
 
 #Preview {
-    RelevantsView(viewModel: RelevantsViewModel(repository: PreviewMocks.MockContentRepository()), todayDate: Date.now)
+    RelevantsView(viewModel: RelevantsViewModel(repository: PreviewMocks.MockContentRepository()))
 }

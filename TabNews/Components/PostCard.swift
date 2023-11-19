@@ -2,14 +2,14 @@ import SwiftUI
 
 struct PostCard: View {
     let contentPreview: ContentPreviewDTO
-    let todayDate: Date
+    @State var nowDate: Date = .now
 
     var body: some View {
         LazyNavigationLink {
             ContentView.create(slug: contentPreview.slug, ownerUsername: contentPreview.ownerUsername)
         } label: {
             VStack(alignment: .leading) {
-                Text("\(contentPreview.ownerUsername) • \(Date.getTimeAgo(fromISO: contentPreview.publishedAt, to: todayDate))")
+                Text("\(contentPreview.ownerUsername) • \(Date.getTimeAgo(fromISO: contentPreview.publishedAt, to: nowDate))")
                     .foregroundStyle(.gray)
                     .font(.system(size: 12))
                     .bold()
@@ -28,10 +28,14 @@ struct PostCard: View {
             .padding(.vertical)
             .background(.clear)
             .frame(maxWidth: .infinity, alignment: .leading)
+            .onAppear {
+                @Injected("date.now") var date: Date
+                nowDate = date
+            }
         }
     }
 }
 
 #Preview {
-    PostCard(contentPreview: .fixture(), todayDate: Date.now)
+    PostCard(contentPreview: .fixture())
 }

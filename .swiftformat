@@ -13,7 +13,7 @@
 --decimalgrouping none
 --elseposition same-line
 --emptybraces no-space
---enumnamespaces always
+--enumnamespaces structs-only
 --enumthreshold 0
 --exponentcase lowercase
 --exponentgrouping disabled

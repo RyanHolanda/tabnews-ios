@@ -3,7 +3,6 @@ import SwiftUI
 struct PostsList: View {
     let posts: [ContentPreviewDTO]
     let shouldPaginate: Bool
-    let todayDate: Date
     let onPaginate: () async -> Void
     let onRefresh: () async -> Void
 
@@ -11,7 +10,7 @@ struct PostsList: View {
         ScrollView(showsIndicators: false) {
             LazyVStack(alignment: .leading, spacing: 0) {
                 ForEach(posts.indices, id: \.self) { index in
-                    PostCard(contentPreview: posts[index], todayDate: todayDate)
+                    PostCard(contentPreview: posts[index])
                     Divider()
                 }
 
@@ -40,7 +39,6 @@ struct PostsList: View {
             ContentPreviewDTO.fixture(),
             ContentPreviewDTO.fixture()
         ],
-        shouldPaginate: false,
-        todayDate: Date.now
+        shouldPaginate: false
     ) {} onRefresh: {}
 }

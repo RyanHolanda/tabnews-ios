@@ -26,8 +26,7 @@ extension CommentsSectionListOrder {
     }
 }
 
-@MainActor
-class CommentsSectionViewModel: ObservableObject {
+@MainActor class CommentsSectionViewModel: ObservableObject {
     init(repository: ContentRepository) {
         self.repository = repository
     }

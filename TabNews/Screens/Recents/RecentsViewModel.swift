@@ -10,8 +10,7 @@ enum RecentsViewState {
     case refreshed
 }
 
-@MainActor
-class RecentsViewModel: ObservableObject {
+@MainActor class RecentsViewModel: ObservableObject {
     init(repository: ContentRepository) {
         self.repository = repository
     }

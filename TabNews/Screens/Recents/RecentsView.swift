@@ -2,19 +2,17 @@ import SwiftUI
 
 extension RecentsView {
     static func create() -> RecentsView {
-        @Injected(\.contentRepository) var repository: ContentRepository
+        @Injected var repository: ContentRepository
         let viewModel: RecentsViewModel = .init(repository: repository)
-        return RecentsView(viewModel: viewModel, todayDate: Date.now)
+        return RecentsView(viewModel: viewModel)
     }
 }
 
 struct RecentsView: View {
     @ObservedObject var viewModel: RecentsViewModel
-    let todayDate: Date
 
-    init(viewModel: RecentsViewModel, todayDate: Date) {
+    init(viewModel: RecentsViewModel) {
         self.viewModel = viewModel
-        self.todayDate = todayDate
         Task {
             await viewModel.fetchRecentsPosts()
         }
@@ -31,8 +29,7 @@ struct RecentsView: View {
                 }
             default: PostsList(
                     posts: viewModel.posts,
-                    shouldPaginate: viewModel.hasMoreItems && !viewModel.posts.isEmpty,
-                    todayDate: todayDate
+                    shouldPaginate: viewModel.hasMoreItems && !viewModel.posts.isEmpty
                 ) {
                     await viewModel.paginateData()
                 }
@@ -46,5 +43,5 @@ struct RecentsView: View {
 }
 
 #Preview {
-    RecentsView(viewModel: RecentsViewModel(repository: PreviewMocks.MockContentRepository()), todayDate: Date.now)
+    RecentsView(viewModel: RecentsViewModel(repository: PreviewMocks.MockContentRepository()))
 }

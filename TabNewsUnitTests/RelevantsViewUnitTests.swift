@@ -3,11 +3,24 @@ import Cuckoo
 import ViewInspector
 import XCTest
 
-@MainActor
-class RelevantsViewUnitTests: XCTestCase {
+@MainActor class RelevantsViewUnitTests: XCTestCase {
     var contentRepository: MockContentRepository = .init()
     var viewModel: RelevantsViewModel?
     var sut: RelevantsView?
+
+    override func setUp() async throws {
+        InjectionService.shared.registerFactory(instanceName: "date.now") {
+            Date(year: 2017, month: 11, day: 11)
+        }
+
+        InjectionService.shared.registerFactory {
+            self.contentRepository as ContentRepository
+        }
+    }
+
+    override func tearDown() async throws {
+        InjectionService.shared.reset()
+    }
 
     func testRelevantsViewViewErrorfetch() async throws {
         stub(contentRepository) { stub in
@@ -16,7 +29,7 @@ class RelevantsViewUnitTests: XCTestCase {
         }
 
         viewModel = .init(repository: contentRepository)
-        sut = .init(viewModel: viewModel!, todayDate: Date(year: 2017, month: 11, day: 11))
+        sut = .init(viewModel: viewModel!)
 
         while viewModel?.state != .error {
             try await Task.sleep(nanoseconds: 1)

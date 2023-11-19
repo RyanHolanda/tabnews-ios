@@ -2,8 +2,7 @@ import Cuckoo
 @testable import TabNews
 import XCTest
 
-@MainActor
-final class RecentsViewModelTests: XCTestCase {
+@MainActor final class RecentsViewModelTests: XCTestCase {
     var sut: RecentsViewModel?
     var contentRepository: MockContentRepository?
 

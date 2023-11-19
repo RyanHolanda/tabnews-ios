@@ -3,26 +3,32 @@ import Cuckoo
 import ViewInspector
 import XCTest
 
-@MainActor
-final class CommentsSectionSnapshotTest: XCTestCase {
+@MainActor final class CommentsSectionSnapshotTest: XCTestCase {
     var sut: CommentsSection?
     var viewModel: CommentsSectionViewModel?
-    var repository: MockContentRepository?
+    var repository: MockContentRepository = .init()
 
     override func setUp() async throws {
-        repository = MockContentRepository()
-        viewModel = CommentsSectionViewModel(repository: repository!)
-        sut = .init(viewModel: viewModel!, todayDate: Date(year: 2017, month: 11, day: 11), ownerUsername: "username", slug: "slug")
+        InjectionService.shared.registerFactory(instanceName: "date.now") {
+            Date(year: 2017, month: 11, day: 11)
+        }
+
+        InjectionService.shared.registerFactory {
+            self.repository as ContentRepository
+        }
+
+        viewModel = CommentsSectionViewModel(repository: repository)
+        sut = .init(viewModel: viewModel!, ownerUsername: "username", slug: "slug")
     }
 
     override func tearDown() async throws {
         viewModel = nil
         sut = nil
-        repository = nil
+        InjectionService.shared.reset()
     }
 
     func testContentState() async throws {
-        stub(repository!) { stub in
+        stub(repository) { stub in
             when(stub.getComments(ownerUsername: any(), slug: any())).thenReturn([
                 CommentDTO.fixture()
             ])
@@ -33,7 +39,7 @@ final class CommentsSectionSnapshotTest: XCTestCase {
     }
 
     func testErrorState() async throws {
-        stub(repository!) { stub in
+        stub(repository) { stub in
             when(stub.getComments(ownerUsername: any(), slug: any())).thenThrow(HTTP.HTTPError.responseError)
         }
         await viewModel?.getComments(ownerUsername: "", slug: "")
@@ -41,7 +47,7 @@ final class CommentsSectionSnapshotTest: XCTestCase {
     }
 
     func testLoadingState() async throws {
-        stub(repository!) { stub in
+        stub(repository) { stub in
             when(stub.getComments(ownerUsername: any(), slug: any())).thenThrow(HTTP.HTTPError.responseError)
         }
 
@@ -49,7 +55,7 @@ final class CommentsSectionSnapshotTest: XCTestCase {
     }
 
     func testContentStateWithSkrankCommentText() async throws {
-        stub(repository!) { stub in
+        stub(repository) { stub in
             when(stub.getComments(ownerUsername: any(), slug: any())).thenReturn([
                 CommentDTO.fixture().copyWith(body: """
                 Just a LONG comment to see the comment card shrank. Just a LONG comment to see the comment card shrank.
@@ -68,7 +74,7 @@ final class CommentsSectionSnapshotTest: XCTestCase {
     }
 
     func testContentStateWithSortedCommentsByRecent() async throws {
-        stub(repository!) { stub in
+        stub(repository) { stub in
             when(stub.getComments(ownerUsername: any(), slug: any())).thenReturn([
                 CommentDTO.fixture().copyWith(id: "LATER", body: "Later Comment", publishedAt: "2010-11-24T22:21:17.146Z"),
                 CommentDTO.fixture().copyWith(id: "EARLIER", body: "Earlier Comment", publishedAt: "2010-11-25T22:21:17.146Z")
@@ -83,7 +89,7 @@ final class CommentsSectionSnapshotTest: XCTestCase {
     }
 
     func testContentStateWithSortedCommentsByRelevantsFromSortedByRecent() async throws {
-        stub(repository!) { stub in
+        stub(repository) { stub in
             when(stub.getComments(ownerUsername: any(), slug: any())).thenReturn([
                 CommentDTO.fixture().copyWith(body: "Less Relevant Comment", tabcoins: 50),
                 CommentDTO.fixture().copyWith(body: "Unrelevant Comment", tabcoins: 0),

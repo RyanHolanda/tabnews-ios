@@ -44,14 +44,21 @@ struct CommentsSection: View {
                     .foregroundStyle(.gray)
                     .font(.subheadline)
 
+            case .initial:
+                ProgressView()
+                    .padding(.top, 25)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .onAppear {
+                        Task {
+                            try? await Task.sleep(nanoseconds: 1500000000)
+                            await viewModel.getComments(ownerUsername: ownerUsername, slug: slug)
+                        }
+                    }
+
             case .loading:
                 ProgressView()
                     .padding(.top, 25)
                     .frame(maxWidth: .infinity, alignment: .center)
-                    .task {
-                        try? await Task.sleep(nanoseconds: 1500000000)
-                        await viewModel.getComments(ownerUsername: ownerUsername, slug: slug)
-                    }
 
             case .error:
                 ErrorView {

@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct PostCard: View {
+    private static var isVisible: Bool = false
     let contentPreview: ContentPreviewDTO
     @State private var nowDate: Date = .now
-    @Environment(\.scenePhase) private var scenePhase: ScenePhase
 
     func updateDateTime() {
         @Injected("date.now") var date: Date
@@ -34,8 +34,14 @@ struct PostCard: View {
             .padding(.vertical)
             .background(.clear)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .onAppear { updateDateTime() }
-            .onChange(of: scenePhase) { if $0 == .active { updateDateTime() } }
+            .onAppear {
+                Self.isVisible = true
+                updateDateTime()
+            }
+            .onDisappear { Self.isVisible = false }
+            .onReceive(NotificationCenter.default.publisher(for: UIScene.didActivateNotification)) { _ in
+                if Self.isVisible { updateDateTime() }
+            }
         }
     }
 }

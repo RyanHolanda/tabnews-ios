@@ -10,9 +10,9 @@ extension ContentView {
 
 struct ContentView: View {
     @ObservedObject var viewModel: ContentViewModel
-    @Injected("date.now") var nowDate: Date
     let slug: String
     let ownerUsername: String
+    @Injected("date.now") private var nowDate: Date
 
     var body: some View {
         GeometryReader { geometry in
@@ -21,6 +21,7 @@ struct ContentView: View {
                 case .loading: ProgressView()
                     .navigationBarTitleDisplayMode(.inline)
                     .frame(width: geometry.size.width, height: geometry.size.height)
+
                 case .error: ErrorView {
                         Task { await viewModel.getContent(ownerUsername: ownerUsername, slug: slug) }
                     }

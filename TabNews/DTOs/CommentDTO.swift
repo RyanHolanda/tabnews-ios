@@ -1,6 +1,6 @@
 import Foundation
 
-struct CommentDTO: DTOProtocol {
+struct CommentDTO: DTOProtocol, Hashable {
     let id: String
     let ownerId: String
     let parentId: String

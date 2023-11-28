@@ -26,7 +26,7 @@ class InjectionService {
         }
 
         guard let singleton = InjectionService.singletons[instanceName ?? "\(key)"] else {
-            fatalError("\(instanceName ?? "\(T.self)") is not registered inside Injections yet")
+            fatalError("\(instanceName ?? "\(T.self)") with type \(T.self) is not registered inside Injections yet")
         }
 
         return singleton as! T

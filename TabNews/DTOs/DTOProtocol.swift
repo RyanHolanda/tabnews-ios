@@ -1,6 +1,6 @@
 import Foundation
 
-protocol DTOProtocol: Codable, Identifiable {
+protocol DTOProtocol: Codable, Identifiable, Equatable {
     #if DEBUG
         static func fixture() -> Self
     #endif

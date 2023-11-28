@@ -16,6 +16,8 @@ struct CommentsSection: View {
     let ownerUsername: String
     let slug: String
 
+    @State private var selectedComment: CommentDTO?
+
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -44,17 +46,6 @@ struct CommentsSection: View {
                     .foregroundStyle(.gray)
                     .font(.subheadline)
 
-            case .initial:
-                ProgressView()
-                    .padding(.top, 25)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .onAppear {
-                        Task {
-                            try? await Task.sleep(nanoseconds: 1500000000)
-                            await viewModel.getComments(ownerUsername: ownerUsername, slug: slug)
-                        }
-                    }
-
             case .loading:
                 ProgressView()
                     .padding(.top, 25)
@@ -67,17 +58,25 @@ struct CommentsSection: View {
                 .frame(maxWidth: .infinity, alignment: .center)
                 .scaleEffect(CGSize(width: 0.85, height: 0.85))
                 .padding(.top, 25)
-            case .success:
+
+            default:
                 LazyVStack(alignment: .leading) {
                     ForEach(viewModel.comments) { comment in
-                        CommentCard(comment: comment)
-                            .padding(.vertical, 10)
+                        CommentCard(comment: comment, onClickToShowReplies: {
+                            selectedComment = comment
+                        })
+                        .padding(.vertical, 10)
                         Divider()
                     }
+                }
+                .sheet(item: $selectedComment) { comment in
+                    CommentRepliesView.create(commentOwnerUsername: comment.ownerUsername, commentSlug: comment.slug)
+                        .presentationBackground(.sheetBackground)
                 }
             }
         }
         .padding(.bottom, 50)
+        .task { await viewModel.getComments(ownerUsername: ownerUsername, slug: slug) }
     }
 
     func sortMenuItem(type: CommentsSectionListOrder) -> some View {

@@ -9,7 +9,7 @@
             "plural" : {
               "one" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "%d Resposta"
                 }
               },
@@ -20,6 +20,17 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "AnswersTo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respostas à %@ (%d)"
           }
         }
       }

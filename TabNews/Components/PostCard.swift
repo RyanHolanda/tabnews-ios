@@ -2,7 +2,13 @@ import SwiftUI
 
 struct PostCard: View {
     let contentPreview: ContentPreviewDTO
-    @State var nowDate: Date = .now
+    @State private var nowDate: Date = .now
+    @Environment(\.scenePhase) private var scenePhase: ScenePhase
+
+    func updateDateTime() {
+        @Injected("date.now") var date: Date
+        nowDate = date
+    }
 
     var body: some View {
         LazyNavigationLink {
@@ -28,10 +34,8 @@ struct PostCard: View {
             .padding(.vertical)
             .background(.clear)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .onAppear {
-                @Injected("date.now") var date: Date
-                nowDate = date
-            }
+            .onAppear { updateDateTime() }
+            .onChange(of: scenePhase) { if $0 == .active { updateDateTime() } }
         }
     }
 }

@@ -17,12 +17,12 @@ final class CommentCardSnapshotTest: XCTestCase {
     }
 
     func testCommentCard() throws {
-        sut = .init(comment: CommentDTO.fixture().copyWith(replies: 12))
+        sut = .init(comment: CommentDTO.fixture().copyWith(replies: 12)) {}
         Snapshooter.snapshot(sut, name: "comment_card")
     }
 
     func testCommentCardWithNoReplies() throws {
-        sut = .init(comment: CommentDTO.fixture().copyWith(replies: 0))
+        sut = .init(comment: CommentDTO.fixture().copyWith(replies: 0)) {}
         Snapshooter.snapshot(sut, name: "comment_card_no_replies")
     }
 }

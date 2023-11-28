@@ -1,7 +1,6 @@
 import Foundation
 
 enum CommentsSectionState {
-    case initial
     case loading
     case success
     case error
@@ -34,7 +33,7 @@ extension CommentsSectionListOrder {
 
     private let repository: ContentRepository
 
-    @Published var state: CommentsSectionState = .initial
+    @Published var state: CommentsSectionState = .loading
     @Published var commentsListSortBy: CommentsSectionListOrder = .relevants
     var comments: [CommentDTO] = []
 

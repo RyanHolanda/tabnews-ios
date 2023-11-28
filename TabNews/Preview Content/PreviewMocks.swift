@@ -2,9 +2,14 @@ import Foundation
 
 enum PreviewMocks {
     class MockContentRepository: ContentRepository {
+        func getComment(ownerUsername _: String, slug _: String) async throws -> CommentDTO {
+            CommentDTO.fixture()
+        }
+
         func getComments(ownerUsername _: String, slug _: String) async throws -> [CommentDTO] {
             [
                 CommentDTO.fixture()
+                    .copyWith(replies: 2)
             ]
         }
 

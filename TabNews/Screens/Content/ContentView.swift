@@ -15,63 +15,63 @@ struct ContentView: View {
     let ownerUsername: String
 
     var body: some View {
-        switch viewModel.state {
-        case .loading: ProgressView().onAppear {
-                Task {
-                    await viewModel.getContent(ownerUsername: ownerUsername, slug: slug)
-                }
-            }
-            .navigationBarTitleDisplayMode(.inline)
-        case .error: ErrorView {
-                Task {
-                    await viewModel.getContent(ownerUsername: ownerUsername, slug: slug)
-                }
-            }
-            .navigationBarTitleDisplayMode(.inline)
-
-        default:
+        GeometryReader { geometry in
             ScrollView {
-                LazyVStack(alignment: .leading) {
-                    Text("\(viewModel.content.ownerUsername) • \(Date.getTimeAgo(fromISO: viewModel.content.createdAt, to: nowDate))")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .padding(.bottom, 2)
-                        .foregroundStyle(.gray)
+                switch viewModel.state {
+                case .loading: ProgressView()
+                    .navigationBarTitleDisplayMode(.inline)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                case .error: ErrorView {
+                        Task { await viewModel.getContent(ownerUsername: ownerUsername, slug: slug) }
+                    }
+                    .navigationBarTitleDisplayMode(.inline)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
 
-                    Text(viewModel.content.title)
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                        .padding(.trailing, 40)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                default:
+                    VStack(alignment: .leading) {
+                        Text("\(viewModel.content.ownerUsername) • \(Date.getTimeAgo(fromISO: viewModel.content.createdAt, to: nowDate))")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .padding(.bottom, 2)
+                            .foregroundStyle(.gray)
 
-                    MarkdownBody(viewModel.content.body)
-                        .padding(.top, 10)
+                        Text(viewModel.content.title)
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .padding(.trailing, 40)
+                            .frame(maxWidth: .infinity, alignment: .leading)
 
-                    CommentsSection.create(
-                        ownerUsername: viewModel.content.ownerUsername,
-                        slug: viewModel.content.slug
-                    )
-                    .padding(.top, 70)
-                }
-                .padding()
-                .navigationBarTitleDisplayMode(.inline)
-            }
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text(viewModel.content.title)
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .lineLimit(1)
-                        .frame(width: 200)
-                }
+                        MarkdownBody(viewModel.content.body)
+                            .padding(.top, 10)
 
-                ToolbarItem(placement: .topBarTrailing) {
-                    ShareLink(item: "\(String.baseUrl)/\(viewModel.content.ownerUsername)/\(viewModel.content.slug)") {
-                        Image(systemName: "square.and.arrow.up")
+                        CommentsSection.create(
+                            ownerUsername: viewModel.content.ownerUsername,
+                            slug: viewModel.content.slug
+                        )
+                        .padding(.top, 70)
+                    }
+                    .padding()
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .principal) {
+                            Text(viewModel.content.title)
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .lineLimit(1)
+                                .frame(width: 200)
+                        }
+
+                        ToolbarItem(placement: .topBarTrailing) {
+                            ShareLink(item: "\(String.baseUrl)/\(viewModel.content.ownerUsername)/\(viewModel.content.slug)") {
+                                Image(systemName: "square.and.arrow.up")
+                            }
+                        }
                     }
                 }
             }
+            .scrollBounceBehavior(.basedOnSize)
         }
+        .task { await viewModel.getContent(ownerUsername: ownerUsername, slug: slug) }
     }
 }
 

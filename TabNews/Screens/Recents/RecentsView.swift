@@ -13,9 +13,7 @@ struct RecentsView: View {
 
     init(viewModel: RecentsViewModel) {
         self.viewModel = viewModel
-        Task {
-            await viewModel.fetchRecentsPosts()
-        }
+        Task { await viewModel.fetchRecentsPosts() }
     }
 
     var body: some View {

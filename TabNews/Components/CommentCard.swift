@@ -2,7 +2,14 @@ import SwiftUI
 
 struct CommentCard: View {
     let comment: CommentDTO
-    @Injected("date.now") var nowDate: Date
+    @State private var nowDate: Date = .now
+    @Environment(\.scenePhase) private var scenePhase: ScenePhase
+    let onClickToShowReplies: () -> Void
+
+    func updateDateTime() {
+        @Injected("date.now") var date: Date
+        nowDate = date
+    }
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -18,18 +25,23 @@ struct CommentCard: View {
                 .padding(.top, 2)
 
             if comment.replies > 0 {
-                Button {} label: {
+                Button {
+                    onClickToShowReplies()
+                } label: {
                     HStack {
                         Image(systemName: "chevron.down")
                         Text(.localizable.answers(comment.replies))
                             .font(.subheadline)
                     }
-                }.padding(.top, 5)
+                }
+                .padding(.top, 5)
             }
         }
+        .onAppear { updateDateTime() }
+        .onChange(of: scenePhase) { if $0 == .active { updateDateTime() } }
     }
 }
 
 #Preview {
-    CommentCard(comment: CommentDTO.fixture().copyWith(replies: 29))
+    CommentCard(comment: CommentDTO.fixture().copyWith(replies: 29)) {}
 }

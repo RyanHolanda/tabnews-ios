@@ -24,7 +24,7 @@
 		B5633BB92AE1715B00A3BE16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5633BB82AE1715B00A3BE16 /* Preview Assets.xcassets */; };
 		B5633BC12AE1717100A3BE16 /* RecentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5633BC02AE1717100A3BE16 /* RecentsView.swift */; };
 		B5633BC32AE1717600A3BE16 /* RelevantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5633BC22AE1717600A3BE16 /* RelevantsView.swift */; };
-		B5633BC72AE1719D00A3BE16 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5633BC62AE1719D00A3BE16 /* NavigationView.swift */; };
+		B5633BC72AE1719D00A3BE16 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5633BC62AE1719D00A3BE16 /* MainView.swift */; };
 		B5633BCA2AE172C900A3BE16 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B5633BC92AE172C900A3BE16 /* .swiftlint.yml */; };
 		B5633BCD2AE17DF000A3BE16 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5633BCC2AE17DF000A3BE16 /* PostCard.swift */; };
 		B5669A3F2AFFD4DE00953E49 /* MarkdownBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5669A3E2AFFD4DE00953E49 /* MarkdownBody.swift */; };
@@ -82,6 +82,7 @@
 		B5DEE45E2AF80BC40094D926 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEE45D2AF80BC40094D926 /* ContentViewModel.swift */; };
 		B5DEE4632AF80CA10094D926 /* ContentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEE4622AF80CA10094D926 /* ContentDTO.swift */; };
 		B5F247052AEC7A00008D2F03 /* RecentsViewSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F247042AEC7A00008D2F03 /* RecentsViewSnapshotTest.swift */; };
+		B5F9FE832B167F4F00D5E45A /* MainViewSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F9FE822B167F4F00D5E45A /* MainViewSnapshotTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B50C49A42B17ED6400DD23BC /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsSnapshotTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsSnapshotTests.xctest"; sourceTree = "<absolute>"; };
+		B50C49A52B17ED6400DD23BC /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUnitTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsUnitTests.xctest"; sourceTree = "<absolute>"; };
+		B50C49A62B17ED6400DD23BC /* TabNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUITests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug-iphoneos/TabNewsUITests.xctest"; sourceTree = "<absolute>"; };
 		B5210B422AEDBE6100B18B96 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		B5210B4C2AEDBF5400B18B96 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		B5210B772AEECBDD00B18B96 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -124,7 +128,7 @@
 		B5633BB82AE1715B00A3BE16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5633BC02AE1717100A3BE16 /* RecentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsView.swift; sourceTree = "<group>"; };
 		B5633BC22AE1717600A3BE16 /* RelevantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelevantsView.swift; sourceTree = "<group>"; };
-		B5633BC62AE1719D00A3BE16 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		B5633BC62AE1719D00A3BE16 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B5633BC92AE172C900A3BE16 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B5633BCC2AE17DF000A3BE16 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
 		B5669A3E2AFFD4DE00953E49 /* MarkdownBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownBody.swift; sourceTree = "<group>"; };
@@ -178,9 +182,7 @@
 		B5DEE4622AF80CA10094D926 /* ContentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDTO.swift; sourceTree = "<group>"; };
 		B5F247042AEC7A00008D2F03 /* RecentsViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsViewSnapshotTest.swift; sourceTree = "<group>"; };
 		B5F63E492AE85F7D00C409AD /* ContentRepositoryUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepositoryUnitTests.swift; sourceTree = "<group>"; };
-		B5F9FE7D2B1653E200D5E45A /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsSnapshotTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsSnapshotTests.xctest"; sourceTree = "<absolute>"; };
-		B5F9FE7E2B1653E200D5E45A /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUnitTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsUnitTests.xctest"; sourceTree = "<absolute>"; };
-		B5F9FE7F2B1653E200D5E45A /* TabNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUITests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug-iphoneos/TabNewsUITests.xctest"; sourceTree = "<absolute>"; };
+		B5F9FE822B167F4F00D5E45A /* MainViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewSnapshotTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,7 +253,7 @@
 				B5633BCB2AE17DDD00A3BE16 /* Components */,
 				B5633BBF2AE1716300A3BE16 /* Screens */,
 				B5633BB12AE1715A00A3BE16 /* TabNewsApp.swift */,
-				B5633BC62AE1719D00A3BE16 /* NavigationView.swift */,
+				B5633BC62AE1719D00A3BE16 /* MainView.swift */,
 				B5633BB52AE1715B00A3BE16 /* Assets.xcassets */,
 				B5633BB72AE1715B00A3BE16 /* Preview Content */,
 			);
@@ -414,6 +416,7 @@
 				B5CE78922B00372000241606 /* CommentCardSnapshotTest.swift */,
 				B58CB1462B01554C008B92F5 /* CommentsSectionSnapshotTest.swift */,
 				B5C81F712B15913B005B3BBD /* CommentRepliesViewSnapshotTest.swift */,
+				B5F9FE822B167F4F00D5E45A /* MainViewSnapshotTest.swift */,
 			);
 			path = TabNewsSnapshotTests;
 			sourceTree = "<group>";
@@ -501,7 +504,7 @@
 			);
 			name = TabNewsUITests;
 			productName = TabNewsUITests;
-			productReference = B5F9FE7F2B1653E200D5E45A /* TabNewsUITests.xctest */;
+			productReference = B50C49A62B17ED6400DD23BC /* TabNewsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		B5D8AE6C2AE58FB500F4CA21 /* TabNewsSnapshotTests */ = {
@@ -528,7 +531,7 @@
 				B58CB14C2B015B25008B92F5 /* ViewInspector */,
 			);
 			productName = TabNewsSnapshotTests;
-			productReference = B5F9FE7D2B1653E200D5E45A /* TabNewsSnapshotTests.xctest */;
+			productReference = B50C49A42B17ED6400DD23BC /* TabNewsSnapshotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		B5D8AE822AE59B1400F4CA21 /* TabNewsUnitTests */ = {
@@ -552,7 +555,7 @@
 				B556C6942AEB0DD00091527A /* Cuckoo */,
 			);
 			productName = TabNewsUnitTests;
-			productReference = B5F9FE7E2B1653E200D5E45A /* TabNewsUnitTests.xctest */;
+			productReference = B50C49A52B17ED6400DD23BC /* TabNewsUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -745,7 +748,7 @@
 				B5C552C22B0AAECD005C7AA7 /* CommentRepliesView.swift in Sources */,
 				B53626062AF69F5A007700A5 /* RelevantsViewModel.swift in Sources */,
 				B5C552A12B099028005C7AA7 /* InjectionService.swift in Sources */,
-				B5633BC72AE1719D00A3BE16 /* NavigationView.swift in Sources */,
+				B5633BC72AE1719D00A3BE16 /* MainView.swift in Sources */,
 				B5CE78822B0021EF00241606 /* CommentsSection.swift in Sources */,
 				B5910EE22AE1E8F6000E00D5 /* RecentsViewModel.swift in Sources */,
 				B53431032AFF31EC003068EE /* LazyNavigationLink.swift in Sources */,
@@ -785,6 +788,7 @@
 			files = (
 				B5CE78932B00372000241606 /* CommentCardSnapshotTest.swift in Sources */,
 				B5D8AE782AE5903300F4CA21 /* ErrorViewSnapshotTest.swift in Sources */,
+				B5F9FE832B167F4F00D5E45A /* MainViewSnapshotTest.swift in Sources */,
 				B5F247052AEC7A00008D2F03 /* RecentsViewSnapshotTest.swift in Sources */,
 				B53430FF2AFF04FC003068EE /* ContentViewSnapshotTest.swift in Sources */,
 				B50B19E62AF1A1F00005F15E /* Snapshooter.swift in Sources */,

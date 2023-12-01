@@ -110,13 +110,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B50C49A42B17ED6400DD23BC /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsSnapshotTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsSnapshotTests.xctest"; sourceTree = "<absolute>"; };
-		B50C49A52B17ED6400DD23BC /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUnitTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsUnitTests.xctest"; sourceTree = "<absolute>"; };
-		B50C49A62B17ED6400DD23BC /* TabNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUITests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug-iphoneos/TabNewsUITests.xctest"; sourceTree = "<absolute>"; };
 		B5210B422AEDBE6100B18B96 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		B5210B4C2AEDBF5400B18B96 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		B5210B772AEECBDD00B18B96 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		B5210B8C2AEEDAEC00B18B96 /* Snapshooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshooter.swift; sourceTree = "<group>"; };
+		B523038C2B1A5FC200CE1CDC /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsSnapshotTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsSnapshotTests.xctest"; sourceTree = "<absolute>"; };
+		B523038D2B1A5FC200CE1CDC /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUnitTests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug/TabNewsUnitTests.xctest"; sourceTree = "<absolute>"; };
+		B523038E2B1A5FC200CE1CDC /* TabNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TabNewsUITests.xctest; path = "/Users/holland/Documents/Personal Projects/tabnews-ios/build/Debug-iphoneos/TabNewsUITests.xctest"; sourceTree = "<absolute>"; };
 		B53430FE2AFF04FC003068EE /* ContentViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewSnapshotTest.swift; sourceTree = "<group>"; };
 		B53431022AFF31EC003068EE /* LazyNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyNavigationLink.swift; sourceTree = "<group>"; };
 		B53626052AF69F5A007700A5 /* RelevantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelevantsViewModel.swift; sourceTree = "<group>"; };
@@ -504,7 +504,7 @@
 			);
 			name = TabNewsUITests;
 			productName = TabNewsUITests;
-			productReference = B50C49A62B17ED6400DD23BC /* TabNewsUITests.xctest */;
+			productReference = B523038E2B1A5FC200CE1CDC /* TabNewsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		B5D8AE6C2AE58FB500F4CA21 /* TabNewsSnapshotTests */ = {
@@ -531,7 +531,7 @@
 				B58CB14C2B015B25008B92F5 /* ViewInspector */,
 			);
 			productName = TabNewsSnapshotTests;
-			productReference = B50C49A42B17ED6400DD23BC /* TabNewsSnapshotTests.xctest */;
+			productReference = B523038C2B1A5FC200CE1CDC /* TabNewsSnapshotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		B5D8AE822AE59B1400F4CA21 /* TabNewsUnitTests */ = {
@@ -555,7 +555,7 @@
 				B556C6942AEB0DD00091527A /* Cuckoo */,
 			);
 			productName = TabNewsUnitTests;
-			productReference = B50C49A52B17ED6400DD23BC /* TabNewsUnitTests.xctest */;
+			productReference = B523038D2B1A5FC200CE1CDC /* TabNewsUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -1083,6 +1083,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -1105,6 +1106,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -1127,6 +1129,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -1149,6 +1152,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_TESTABILITY = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;

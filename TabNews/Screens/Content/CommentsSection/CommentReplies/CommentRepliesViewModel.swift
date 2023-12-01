@@ -6,6 +6,12 @@ enum CommentRepliesState {
     case success
 }
 
+extension CommentRepliesState {
+    var isSuccess: Bool {
+        self == .success
+    }
+}
+
 @MainActor
 class CommentRepliesViewModel: ObservableObject {
     init(repository: ContentRepository) {

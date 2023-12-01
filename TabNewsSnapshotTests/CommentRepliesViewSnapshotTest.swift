@@ -1,10 +1,12 @@
 import Cuckoo
+import SwiftUI
 @testable import TabNews
+import ViewInspector
 import XCTest
 
 @MainActor
 final class CommentRepliesViewSnapshotTest: XCTestCase {
-    var sut: CommentRepliesView?
+    var sut: (any View)?
     var viewModel: CommentRepliesViewModel?
     let contentRepository: MockContentRepository = .init()
 
@@ -13,12 +15,19 @@ final class CommentRepliesViewSnapshotTest: XCTestCase {
             Date(year: 2017, month: 11, day: 11)
         }
 
+        InjectionService.shared.registerFactory {
+            self.contentRepository as ContentRepository
+        }
+
         stub(contentRepository) { stub in
             when(stub.getComments(ownerUsername: any(), slug: any())).thenReturn([CommentDTO.fixture(), CommentDTO.fixture(), CommentDTO.fixture()])
         }
 
         viewModel = .init(repository: contentRepository)
-        sut = .init(commentOwnerUsername: "Marge", commentSlug: "", viewModel: viewModel!)
+        sut = AnyView(NavigationStack {
+            CommentRepliesView(commentOwnerUsername: "Marge", commentSlug: "", viewModel: viewModel!)
+        }.environmentObject(CommentsSectionViewModel(repository: contentRepository))
+        )
     }
 
     override func tearDown() async throws {
@@ -29,11 +38,11 @@ final class CommentRepliesViewSnapshotTest: XCTestCase {
     func testContentState() async throws {
         await viewModel!.getReplies(commentOwnerUsername: "", commentSlug: "")
 
-        Snapshooter.snapshot(sut, name: "comment_replies")
+        Snapshooter.snapshot(sut!, name: "comment_replies")
     }
 
     func testLoadingState() async throws {
-        Snapshooter.snapshot(sut, name: "comment_replies_loading")
+        Snapshooter.snapshot(sut!, name: "comment_replies_loading")
     }
 
     func testErrorState() async throws {
@@ -43,6 +52,6 @@ final class CommentRepliesViewSnapshotTest: XCTestCase {
 
         await viewModel!.getReplies(commentOwnerUsername: "", commentSlug: "")
 
-        Snapshooter.snapshot(sut, name: "comment_replies_error")
+        Snapshooter.snapshot(sut!, name: "comment_replies_error")
     }
 }

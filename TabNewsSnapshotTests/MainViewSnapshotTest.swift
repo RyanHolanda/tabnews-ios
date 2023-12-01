@@ -20,6 +20,7 @@ final class MainViewSnapshotTest: XCTestCase {
 
     override func tearDown() async throws {
         sut = nil
+        InjectionService.shared.reset()
     }
 
     func testMainView() {

@@ -35,7 +35,15 @@ extension CommentsSectionListOrder {
 
     @Published var state: CommentsSectionState = .loading
     @Published var commentsListSortBy: CommentsSectionListOrder = .relevants
+    @Published var isShowingCommentRepliesSheet: Bool = false
+    var showingRepliesComment: CommentDTO?
+
     var comments: [CommentDTO] = []
+
+    func toggleShowCommentReplies(comment: CommentDTO?) {
+        showingRepliesComment = comment
+        isShowingCommentRepliesSheet.toggle()
+    }
 
     func getComments(ownerUsername: String, slug: String) async {
         do {

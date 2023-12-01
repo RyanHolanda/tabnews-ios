@@ -1,11 +1,12 @@
 import Cuckoo
+import SwiftUI
 @testable import TabNews
 import ViewInspector
 import XCTest
 
 @MainActor
 final class CommentRepliesViewUnitTests: XCTestCase {
-    var sut: CommentRepliesView?
+    var sut: (any View)?
     var viewModel: CommentRepliesViewModel?
     let contentRepository: MockContentRepository = .init()
 
@@ -14,12 +15,19 @@ final class CommentRepliesViewUnitTests: XCTestCase {
             Date(year: 2017, month: 11, day: 11)
         }
 
+        InjectionService.shared.registerFactory {
+            self.contentRepository as ContentRepository
+        }
+
         stub(contentRepository) { stub in
             when(stub.getComments(ownerUsername: any(), slug: any())).thenReturn([CommentDTO.fixture(), CommentDTO.fixture(), CommentDTO.fixture()])
         }
 
         viewModel = .init(repository: contentRepository)
-        sut = .init(commentOwnerUsername: "Marge", commentSlug: "", viewModel: viewModel!)
+        sut = AnyView(NavigationStack {
+            CommentRepliesView(commentOwnerUsername: "Marge", commentSlug: "", viewModel: viewModel!)
+        }.environmentObject(CommentsSectionViewModel(repository: contentRepository))
+        )
     }
 
     override func tearDown() async throws {
@@ -34,7 +42,7 @@ final class CommentRepliesViewUnitTests: XCTestCase {
 
         await viewModel!.getReplies(commentOwnerUsername: "", commentSlug: "")
 
-        let tryAgainButton: InspectableView = try sut.inspect().find(button: String(localized: .localizable.tryAgain))
+        let tryAgainButton: InspectableView = try sut!.inspect().find(button: String(localized: .localizable.tryAgain))
         try tryAgainButton.tap()
 
         try await Task.sleep(nanoseconds: 1000000)

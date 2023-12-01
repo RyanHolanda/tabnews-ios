@@ -16,8 +16,6 @@ struct CommentsSection: View {
     let ownerUsername: String
     let slug: String
 
-    @State private var selectedComment: CommentDTO?
-
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -63,15 +61,20 @@ struct CommentsSection: View {
                 LazyVStack(alignment: .leading) {
                     ForEach(viewModel.comments) { comment in
                         CommentCard(comment: comment, onClickToShowReplies: {
-                            selectedComment = comment
+                            viewModel.toggleShowCommentReplies(comment: comment)
                         })
                         .padding(.vertical, 10)
                         Divider()
                     }
                 }
-                .sheet(item: $selectedComment) { comment in
-                    CommentRepliesView.create(commentOwnerUsername: comment.ownerUsername, commentSlug: comment.slug)
-                        .presentationBackground(.sheetBackground)
+                .sheet(isPresented: $viewModel.isShowingCommentRepliesSheet) {
+                    NavigationStack {
+                        CommentRepliesView.create(
+                            commentOwnerUsername: viewModel.showingRepliesComment?.ownerUsername ?? "",
+                            commentSlug: viewModel.showingRepliesComment?.slug ?? ""
+                        )
+                    }
+                    .environmentObject(viewModel)
                 }
             }
         }

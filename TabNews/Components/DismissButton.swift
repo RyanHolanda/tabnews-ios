@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct DismissButton: View {
-    @Environment(\.dismiss) var dismiss: DismissAction
+    var onTap: () -> Void
 
     var body: some View {
         Button {
-            dismiss()
+            onTap()
         } label: {
             Image(systemName: "chevron.down")
                 .font(.system(size: 13, weight: .bold))
@@ -19,5 +19,5 @@ struct DismissButton: View {
 }
 
 #Preview {
-    DismissButton()
+    DismissButton {}
 }

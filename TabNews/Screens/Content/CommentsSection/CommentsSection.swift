@@ -34,7 +34,7 @@ struct CommentsSection: View {
                             .rotationEffect(.degrees(viewModel.commentsListSortBy.isRelevants ? .zero : 180))
                         Text(viewModel.commentsListSortBy.label)
                     }
-                }
+                }.accessibilityIdentifier("comments-sort")
             }
 
             switch viewModel.state {
@@ -96,6 +96,7 @@ struct CommentsSection: View {
             }
         }
         .disabled(viewModel.commentsListSortBy == type)
+        .accessibilityIdentifier("sort-\(type.value)")
     }
 }
 

@@ -41,6 +41,7 @@ struct ContentView: View {
                             .fontWeight(.semibold)
                             .padding(.trailing, 40)
                             .frame(maxWidth: .infinity, alignment: .leading)
+                            .accessibilityIdentifier("content-title")
 
                         MarkdownBody(viewModel.content.body)
                             .padding(.top, 10)

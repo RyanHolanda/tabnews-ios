@@ -11,6 +11,7 @@ struct PostsList: View {
             LazyVStack(alignment: .leading, spacing: 0) {
                 ForEach(posts.indices, id: \.self) { index in
                     PostCard(contentPreview: posts[index])
+                        .accessibilityIdentifier("post-\(index)")
                     Divider()
                 }
 

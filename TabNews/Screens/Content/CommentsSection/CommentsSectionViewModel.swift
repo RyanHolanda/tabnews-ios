@@ -13,6 +13,10 @@ enum CommentsSectionListOrder: Int {
 }
 
 extension CommentsSectionListOrder {
+    var value: String {
+        ["relevants", "recents"][rawValue]
+    }
+
     var label: String {
         [String(localized: .localizable.relevants), String(localized: .localizable.recents)][rawValue]
     }

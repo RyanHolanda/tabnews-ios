@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: TabNews/Core/HTTP.swift at 2023-12-04 9:35:47 PM +0000
+// MARK: - Mocks generated from file: TabNews/Core/HTTP.swift at 2023-12-05 11:22:21 PM +0000
 
 import Cuckoo
 @testable import TabNews
@@ -163,7 +163,7 @@ class HTTPStub: HTTP {
     }
 }
 
-// MARK: - Mocks generated from file: TabNews/Repositories/ContentRepository.swift at 2023-12-04 9:35:47 PM +0000
+// MARK: - Mocks generated from file: TabNews/Repositories/ContentRepository.swift at 2023-12-05 11:22:21 PM +0000
 
 import Cuckoo
 @testable import TabNews

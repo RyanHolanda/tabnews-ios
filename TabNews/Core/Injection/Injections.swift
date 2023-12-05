@@ -6,7 +6,7 @@ func setupInjections() {
 
     injection.registerSingleton { HTTP(
         session: URLSession(configuration: URLSessionConfiguration.default),
-        baseURL: .APIbaseUrl
+        baseURL: EnvironmentService.getAPIBaseUrl()
     ) }
 
     injection.registerSingleton {

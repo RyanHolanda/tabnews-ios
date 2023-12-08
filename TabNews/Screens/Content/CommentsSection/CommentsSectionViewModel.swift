@@ -7,6 +7,12 @@ enum CommentsSectionState {
     case empty
 }
 
+extension CommentsSectionState {
+    var isSuccess: Bool {
+        self == .success
+    }
+}
+
 enum CommentsSectionListOrder: Int {
     case relevants
     case recents

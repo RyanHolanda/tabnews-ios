@@ -17,7 +17,9 @@
     },
     "maximumTestExecutionTimeAllowance" : 60,
     "region" : "BR",
+    "repeatInNewRunnerProcess" : true,
     "testExecutionOrdering" : "random",
+    "testRepetitionMode" : "retryOnFailure",
     "testTimeoutsEnabled" : true
   },
   "testTargets" : [

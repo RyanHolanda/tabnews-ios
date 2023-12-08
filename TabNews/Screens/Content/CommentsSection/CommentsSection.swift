@@ -79,7 +79,7 @@ struct CommentsSection: View {
             }
         }
         .padding(.bottom, 50)
-        .task { await viewModel.getComments(ownerUsername: ownerUsername, slug: slug) }
+        .task { if !viewModel.state.isSuccess { await viewModel.getComments(ownerUsername: ownerUsername, slug: slug) } }
     }
 
     func sortMenuItem(type: CommentsSectionListOrder) -> some View {

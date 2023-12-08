@@ -74,7 +74,7 @@ struct ContentView: View {
             }
             .scrollBounceBehavior(.basedOnSize)
         }
-        .task { await viewModel.getContent(ownerUsername: ownerUsername, slug: slug) }
+        .task { if !viewModel.state.isSuccess { await viewModel.getContent(ownerUsername: ownerUsername, slug: slug) } }
     }
 }
 

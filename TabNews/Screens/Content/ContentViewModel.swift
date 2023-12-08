@@ -6,6 +6,12 @@ enum ContentViewState {
     case error
 }
 
+extension ContentViewState {
+    var isSuccess: Bool {
+        self == .success
+    }
+}
+
 @MainActor class ContentViewModel: ObservableObject {
     init(contentRepository: ContentRepository) {
         self.contentRepository = contentRepository

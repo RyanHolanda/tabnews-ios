@@ -1,5 +1,5 @@
-import Foundation
 import MarkdownUI
+import SwiftUI
 
 extension MarkdownUI.Theme {
     static let custom: Theme = .init()
@@ -43,5 +43,31 @@ extension MarkdownUI.Theme {
             config.label.markdownTextStyle {
                 FontSize(15)
             }
+        }
+        .image(body: { config in
+            ScrollView(.horizontal) {
+                config.label
+            }
+            .scrollBounceBehavior(.basedOnSize)
+        })
+        .code {
+            FontFamilyVariant(.monospaced)
+            BackgroundColor(Color(.secondarySystemBackground))
+        }
+        .codeBlock { config in
+            ScrollView(.horizontal) {
+                config.label
+                    .relativeLineSpacing(.em(0.25))
+                    .markdownTextStyle {
+                        FontFamilyVariant(.monospaced)
+                        FontSize(.em(0.85))
+                    }
+                    .padding()
+            }
+            .accessibilityIdentifier("code-block-scroll-view")
+            .scrollBounceBehavior(.basedOnSize)
+            .background(Color(.secondarySystemBackground))
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .markdownMargin(top: .em(0.8), bottom: .em(0.8))
         }
 }

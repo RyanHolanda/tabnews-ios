@@ -43,6 +43,12 @@ final class ContentViewUITests: BaseUITestCase {
         XCTAssertTrue(scrollView("comment-replies-scroll").exists, "Comment replies sheet not found")
     }
 
+    func testScrollOnCodeBlock() {
+        RecentsViewRobot()
+            .openPost()
+            .scrollCodeBlock()
+    }
+
     func testCloseCommentRepliesSheet() {
         RecentsViewRobot()
             .openPost()

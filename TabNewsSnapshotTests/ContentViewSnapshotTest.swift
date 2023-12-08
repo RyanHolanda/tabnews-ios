@@ -39,6 +39,24 @@ import XCTest
         Snapshooter.snapshot(sut!, name: "content_view")
     }
 
+    func testContentStateWithCodeBlock() async throws {
+        stub(contentRepository) { stub in
+            when(stub.getPost(ownerUsername: any(), slug: any())).thenReturn(ContentDTO.fixture().copyWith(body: """
+            ```
+            func testContentState() async throws {
+                    stub(contentRepository) { stub in
+                        when(stub.getPost(ownerUsername: any(), slug: any())).thenReturn(ContentDTO.fixture())
+                    }
+                    await viewModel?.getContent(ownerUsername: "", slug: "")
+                    Snapshooter.snapshot(sut!, name: "content_view")
+                }
+             ```
+            """))
+        }
+        await viewModel?.getContent(ownerUsername: "", slug: "")
+        Snapshooter.snapshot(sut!, name: "content_view_code_block")
+    }
+
     func testErrorState() async throws {
         stub(contentRepository) { stub in
             when(stub.getPost(ownerUsername: any(), slug: any())).thenThrow(HTTP.HTTPError.responseError)

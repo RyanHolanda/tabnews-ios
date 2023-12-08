@@ -61,6 +61,21 @@ struct ContentDTO: DTOProtocol {
         )
     }
 
+    func copyWith(id: String? = nil, ownerId: String? = nil, slug: String? = nil, title: String? = nil, createdAt: String? = nil, updatedAt: String? = nil, ownerUsername: String? = nil, tabcoins: Int? = nil, commentsCount: Int? = nil, body: String? = nil) -> ContentDTO {
+        ContentDTO(
+            id: id ?? self.id,
+            ownerId: ownerId ?? self.ownerId,
+            slug: slug ?? self.slug,
+            title: title ?? self.title,
+            createdAt: createdAt ?? self.createdAt,
+            updatedAt: updatedAt ?? self.updatedAt,
+            ownerUsername: ownerUsername ?? self.ownerUsername,
+            tabcoins: tabcoins ?? self.tabcoins,
+            commentsCount: commentsCount ?? self.commentsCount,
+            body: body ?? self.body
+        )
+    }
+
     #if DEBUG
         static func fixture() -> ContentDTO {
             ContentDTO(

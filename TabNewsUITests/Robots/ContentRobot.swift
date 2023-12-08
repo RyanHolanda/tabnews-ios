@@ -8,6 +8,16 @@ class ContentRobot: AppRobot {
     }
 
     @discardableResult
+    func scrollCodeBlock() -> ContentRobot {
+        while !scrollView("code-block-scroll-view").firstMatch.isHittable {
+            scrollDown()
+        }
+
+        scrollView("code-block-scroll-view").firstMatch.swipeLeft()
+        return ContentRobot()
+    }
+
+    @discardableResult
     func copyContentLink() -> ContentRobot {
         button("share-post").tap()
         cells("Copiar").tap()

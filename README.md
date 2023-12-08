@@ -9,10 +9,3 @@ This app is a TabNews client for iOS. You can see the original TabNews [here](ht
 
 ## Install and Run
 To run this app on your machine is very easy. Just clone this repository, Build and Run the "TabNews" Target
-
-## Local run
-If you want to run the app on a local server:
-1. Run the "LocalServer" Target
-2. Run the "TabNews (Local)" Target
-   
-Now You're running it locally :)

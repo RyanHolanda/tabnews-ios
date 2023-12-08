@@ -34,6 +34,7 @@ struct CommentCard: View {
                             .font(.subheadline)
                     }
                 }
+                .accessibilityIdentifier("comment-replies")
                 .padding(.top, 5)
             }
         }

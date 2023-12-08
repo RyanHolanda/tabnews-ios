@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: TabNews/Repositories/ContentRepository.swift at 2023-12-05 11:22:21 PM +0000
+// MARK: - Mocks generated from file: TabNews/Repositories/ContentRepository.swift at 2023-12-08 12:40:53 AM +0000
 
 import Cuckoo
 @testable import TabNews

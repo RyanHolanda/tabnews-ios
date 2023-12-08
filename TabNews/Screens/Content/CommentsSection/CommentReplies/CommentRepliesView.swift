@@ -47,6 +47,7 @@ struct CommentRepliesView: View {
                     .padding()
                 }
             }
+            .accessibilityIdentifier("comment-replies-scroll")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
@@ -56,7 +57,7 @@ struct CommentRepliesView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) { DismissButton {
                     commentsSectionViewModel.toggleShowCommentReplies(comment: nil)
-                } }
+                }.accessibilityIdentifier("dismiss-comment-replies") }
             }
             .navigationDestination(isPresented: $isShowingReplies) {
                 CommentRepliesView.create(commentOwnerUsername: selectedReply?.ownerUsername ?? "", commentSlug: selectedReply?.slug ?? "")

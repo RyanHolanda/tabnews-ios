@@ -1,11 +1,16 @@
-import LocalServer
 import XCTest
 
 class BaseUITestCase: XCTestCase, UITestElements {
+    let localServer: LocalServer = .init()
+
     override func setUpWithError() throws {
-        XCUIApplication(bundleIdentifier: "com.holland.LocalServer").launch()
+        localServer.run()
         app.launchEnvironment["env"] = "local"
         app.launch()
         continueAfterFailure = false
+    }
+
+    override func tearDownWithError() throws {
+        localServer.stop()
     }
 }

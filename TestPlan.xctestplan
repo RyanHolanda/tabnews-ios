@@ -30,6 +30,7 @@
       }
     },
     {
+      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:TabNews.xcodeproj",
         "identifier" : "B5D8AE822AE59B1400F4CA21",
@@ -37,6 +38,19 @@
       }
     },
     {
+      "selectedTests" : [
+        "ContentViewUITests\/testBack()",
+        "ContentViewUITests\/testCloseCommentRepliesSheet()",
+        "ContentViewUITests\/testCloseCommentRepliesSheetAfterNavigatingThroughCommentReplies()",
+        "ContentViewUITests\/testGoingBackgroundAndComingBack()",
+        "ContentViewUITests\/testOpenCommentReplies()",
+        "ContentViewUITests\/testSharePostAction()",
+        "ContentViewUITests\/testSharePostLink()",
+        "MainViewUITests\/testGoToRelevantsThenRecentsTab()",
+        "MainViewUITests\/testGoToRelevantsView()",
+        "RecentsViewUITests\/testOpenPost()",
+        "RelevantsViewUITests\/testOpenPost()"
+      ],
       "target" : {
         "containerPath" : "container:TabNews.xcodeproj",
         "identifier" : "B5A199702AF41A5E00243A5E",

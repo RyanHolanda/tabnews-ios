@@ -28,4 +28,13 @@ extension UITestElements {
 
     func menu() -> XCUIElement { app.menus.element }
     func menu(_ identifier: String) -> XCUIElement { app.menus[identifier] }
+
+    func scrollView() -> XCUIElement { app.scrollViews.element }
+    func scrollView(_ identifier: String) -> XCUIElement { app.scrollViews[identifier] }
+
+    func collectionView() -> XCUIElement { app.collectionViews.element }
+    func collectionView(_ identifier: String) -> XCUIElement { app.collectionViews[identifier] }
+
+    func cells() -> XCUIElement { app.cells.element }
+    func cells(_ identifier: String) -> XCUIElement { app.cells[identifier] }
 }

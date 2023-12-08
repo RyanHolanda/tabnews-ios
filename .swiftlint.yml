@@ -14,7 +14,7 @@ excluded:
 - SwiftLint/Common/3rdPartyLib
 - "*/GeneratedMocks.swift"
 - "BuildTools"
-- "LocalServer/Responses"
+- "TabNewsUITests/LocalServer/Responses"
 
 line_length:
     warning: 181

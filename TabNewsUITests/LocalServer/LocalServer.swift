@@ -3,10 +3,10 @@ import Swifter
 
 class LocalServer {
     private let server: HttpServer = .init()
-    deinit { server.stop() }
+    deinit { stop() }
 
-    func getPort() -> Int? {
-        try? server.port()
+    func stop() {
+        server.stop()
     }
 
     func run() {

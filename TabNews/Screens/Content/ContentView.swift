@@ -67,6 +67,7 @@ struct ContentView: View {
                             ShareLink(item: "\(String.baseUrl)/\(viewModel.content.ownerUsername)/\(viewModel.content.slug)") {
                                 Image(systemName: "square.and.arrow.up")
                             }
+                            .accessibilityIdentifier("share-post")
                         }
                     }
                 }

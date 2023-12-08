@@ -18,7 +18,7 @@ struct PostsList: View {
                 if shouldPaginate {
                     ProgressView()
                         .frame(maxWidth: .infinity, alignment: .center)
-                        .padding(.top, 40)
+                        .padding(.vertical, 40)
                         .task {
                             await onPaginate()
                         }

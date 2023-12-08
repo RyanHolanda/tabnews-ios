@@ -1,16 +1,18 @@
 import XCTest
 
 class BaseUITestCase: XCTestCase, UITestElements {
-    let localServer: LocalServer = .init()
+    var localServer: LocalServer?
 
     override func setUpWithError() throws {
-        localServer.run()
+        localServer = .init()
+        localServer!.run()
         app.launchEnvironment["env"] = "local"
         app.launch()
         continueAfterFailure = false
     }
 
     override func tearDownWithError() throws {
-        localServer.stop()
+        localServer!.stop()
+        localServer = nil
     }
 }

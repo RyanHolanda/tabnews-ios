@@ -44,6 +44,7 @@
         "ContentViewUITests\/testBack()",
         "ContentViewUITests\/testCloseCommentRepliesSheet()",
         "ContentViewUITests\/testCloseCommentRepliesSheetAfterNavigatingThroughCommentReplies()",
+        "ContentViewUITests\/testCopyPostLink()",
         "ContentViewUITests\/testGoingBackgroundAndComingBack()",
         "ContentViewUITests\/testOpenCommentReplies()",
         "ContentViewUITests\/testSharePostAction()",

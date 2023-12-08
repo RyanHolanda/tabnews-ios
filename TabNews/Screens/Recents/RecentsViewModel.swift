@@ -18,7 +18,7 @@ enum RecentsViewState {
     private let repository: ContentRepository
 
     var posts: [ContentPreviewDTO] = []
-    private let itemsPerPage: Int = 20
+    private let itemsPerPage: Int = 40
     private var currentPage: Int = 1
     var hasMoreItems: Bool = true
     @Published var state: RecentsViewState = .initial

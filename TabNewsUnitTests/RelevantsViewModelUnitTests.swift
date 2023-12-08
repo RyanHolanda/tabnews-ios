@@ -19,9 +19,9 @@ import XCTest
 
     func testPaginateData() async throws {
         await sut!.paginateData()
-        verify(contentRepository!, times(1)).getRelevantsPosts(page: 2, perPage: 20).with(returnType: [ContentPreviewDTO].self)
+        verify(contentRepository!, times(1)).getRelevantsPosts(page: 2, perPage: 40).with(returnType: [ContentPreviewDTO].self)
         await sut!.paginateData()
-        verify(contentRepository!, times(1)).getRelevantsPosts(page: 3, perPage: 20).with(returnType: [ContentPreviewDTO].self)
+        verify(contentRepository!, times(1)).getRelevantsPosts(page: 3, perPage: 40).with(returnType: [ContentPreviewDTO].self)
 
         XCTAssert(sut!.posts.count == 2)
     }
@@ -35,7 +35,7 @@ import XCTest
         await sut!.paginateData()
         await sut!.paginateData()
 
-        verify(contentRepository!, times(2)).getRelevantsPosts(page: 2, perPage: 20).with(returnType: [ContentPreviewDTO].self)
+        verify(contentRepository!, times(2)).getRelevantsPosts(page: 2, perPage: 40).with(returnType: [ContentPreviewDTO].self)
     }
 
     func testPaginateDataFinished() async throws {
@@ -52,7 +52,7 @@ import XCTest
     func testRefreshPosts() async throws {
         await sut!.refreshPosts()
 
-        verify(contentRepository!, times(1)).getRelevantsPosts(page: 1, perPage: 20).with(returnType: [ContentPreviewDTO].self)
+        verify(contentRepository!, times(1)).getRelevantsPosts(page: 1, perPage: 40).with(returnType: [ContentPreviewDTO].self)
     }
 
     func testRefreshPostsError() async throws {
@@ -63,7 +63,7 @@ import XCTest
 
         await sut!.refreshPosts()
 
-        verify(contentRepository!, times(1)).getRelevantsPosts(page: 1, perPage: 20).with(returnType: [ContentPreviewDTO].self)
+        verify(contentRepository!, times(1)).getRelevantsPosts(page: 1, perPage: 40).with(returnType: [ContentPreviewDTO].self)
         XCTAssert(sut!.state == .error)
     }
 }

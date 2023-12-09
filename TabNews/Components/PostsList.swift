@@ -27,7 +27,6 @@ struct PostsList: View {
             .padding()
         }
         .refreshable {
-            try? await Task.sleep(nanoseconds: 1000000000)
             await onRefresh()
         }
     }

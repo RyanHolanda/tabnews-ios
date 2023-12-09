@@ -1,7 +1,6 @@
 import Foundation
 
 enum RecentsViewState {
-    case initial
     case loading
     case success
     case error
@@ -21,7 +20,7 @@ enum RecentsViewState {
     private let itemsPerPage: Int = 40
     private var currentPage: Int = 1
     var hasMoreItems: Bool = true
-    @Published var state: RecentsViewState = .initial
+    @Published var state: RecentsViewState = .loading
 
     func paginateData() async {
         do {

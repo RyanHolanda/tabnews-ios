@@ -13,7 +13,7 @@ struct ContentView: View {
     let slug: String
     let ownerUsername: String
     @Injected("date.now") private var nowDate: Date
-
+    
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
@@ -54,24 +54,25 @@ struct ContentView: View {
                     }
                     .padding()
                     .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .principal) {
-                            Text(viewModel.content.title)
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
-                                .lineLimit(1)
-                                .frame(width: 200)
-                        }
-
-                        ToolbarItem(placement: .topBarTrailing) {
-                            ShareLink(item: "\(String.baseUrl)/\(viewModel.content.ownerUsername)/\(viewModel.content.slug)") {
-                                Image(systemName: "square.and.arrow.up")
-                            }
-                            .accessibilityIdentifier("share-post")
-                        }
-                    }
                 }
             }
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text(viewModel.content.title)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .lineLimit(1)
+                        .frame(width: 200)
+                }
+
+                ToolbarItem(placement: .topBarTrailing) {
+                    ShareLink(item: "\(String.baseUrl)/\(ownerUsername)/\(slug)") {
+                        Image(systemName: "square.and.arrow.up")
+                    }
+                    .accessibilityIdentifier("share-post")
+                }
+            }
+
             .scrollBounceBehavior(.basedOnSize)
         }
         .task { if !viewModel.state.isSuccess { await viewModel.getContent(ownerUsername: ownerUsername, slug: slug) } }

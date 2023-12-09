@@ -63,6 +63,7 @@
 		B5C552BF2B0AA65F005C7AA7 /* CommentsSectionUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C552BE2B0AA65F005C7AA7 /* CommentsSectionUnitTests.swift */; };
 		B5C552C22B0AAECD005C7AA7 /* CommentRepliesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C552C12B0AAECD005C7AA7 /* CommentRepliesView.swift */; };
 		B5C552C82B0AB0CE005C7AA7 /* CommentRepliesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C552C72B0AB0CE005C7AA7 /* CommentRepliesViewModel.swift */; };
+		B5C656B92B23E0E0002F5536 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C656B82B23E0E0002F5536 /* Launch Screen.storyboard */; };
 		B5C81F662B15195D005B3BBD /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C81F652B15195D005B3BBD /* DismissButton.swift */; };
 		B5C81F722B15913B005B3BBD /* CommentRepliesViewSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C81F712B15913B005B3BBD /* CommentRepliesViewSnapshotTest.swift */; };
 		B5C81F752B159A17005B3BBD /* CommentRepliesViewUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C81F742B159A17005B3BBD /* CommentRepliesViewUnitTests.swift */; };
@@ -187,6 +188,7 @@
 		B5C552BE2B0AA65F005C7AA7 /* CommentsSectionUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsSectionUnitTests.swift; sourceTree = "<group>"; };
 		B5C552C12B0AAECD005C7AA7 /* CommentRepliesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepliesView.swift; sourceTree = "<group>"; };
 		B5C552C72B0AB0CE005C7AA7 /* CommentRepliesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepliesViewModel.swift; sourceTree = "<group>"; };
+		B5C656B82B23E0E0002F5536 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B5C81F652B15195D005B3BBD /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
 		B5C81F712B15913B005B3BBD /* CommentRepliesViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepliesViewSnapshotTest.swift; sourceTree = "<group>"; };
 		B5C81F742B159A17005B3BBD /* CommentRepliesViewUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepliesViewUnitTests.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 				B5633BC62AE1719D00A3BE16 /* MainView.swift */,
 				B5633BB52AE1715B00A3BE16 /* Assets.xcassets */,
 				B5633BB72AE1715B00A3BE16 /* Preview Content */,
+				B5C656B82B23E0E0002F5536 /* Launch Screen.storyboard */,
 			);
 			path = TabNews;
 			sourceTree = "<group>";
@@ -694,6 +697,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C656B92B23E0E0002F5536 /* Launch Screen.storyboard in Resources */,
 				B56B1D842B0905CA00D00A21 /* .swiftformat in Resources */,
 				B5633BCA2AE172C900A3BE16 /* .swiftlint.yml in Resources */,
 				B5633BB92AE1715B00A3BE16 /* Preview Assets.xcassets in Resources */,
@@ -1072,6 +1076,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "TabNews/Preview\\ Content/PreviewMocks.swift TabNews/Preview\\ Content";
@@ -1082,6 +1087,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1106,6 +1112,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "TabNews/Preview\\ Content/PreviewMocks.swift TabNews/Preview\\ Content";
@@ -1117,6 +1124,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (

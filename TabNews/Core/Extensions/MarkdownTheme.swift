@@ -44,12 +44,6 @@ extension MarkdownUI.Theme {
                 FontSize(15)
             }
         }
-        .image(body: { config in
-            ScrollView(.horizontal) {
-                config.label
-            }
-            .scrollBounceBehavior(.basedOnSize)
-        })
         .code {
             FontFamilyVariant(.monospaced)
             BackgroundColor(Color(.secondarySystemBackground))
@@ -64,8 +58,8 @@ extension MarkdownUI.Theme {
                     }
                     .padding()
             }
-            .accessibilityIdentifier("code-block-scroll-view")
             .scrollBounceBehavior(.basedOnSize)
+            .accessibilityIdentifier("code-block-scroll-view")
             .background(Color(.secondarySystemBackground))
             .clipShape(RoundedRectangle(cornerRadius: 8))
             .markdownMargin(top: .em(0.8), bottom: .em(0.8))

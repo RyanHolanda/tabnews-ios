@@ -27,7 +27,7 @@ struct ExpandableMarkdownBody: View {
                     )
             }
             .scrollDisabled(true)
-            .frame(maxHeight: isExpanded ? contentHeight : 140)
+            .frame(maxHeight: isExpanded ? nil : 140)
             .animation(.snappy, value: !isExpanded)
             .overlay {
                 LinearGradient(

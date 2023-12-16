@@ -64,6 +64,7 @@
 		B5C552C22B0AAECD005C7AA7 /* CommentRepliesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C552C12B0AAECD005C7AA7 /* CommentRepliesView.swift */; };
 		B5C552C82B0AB0CE005C7AA7 /* CommentRepliesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C552C72B0AB0CE005C7AA7 /* CommentRepliesViewModel.swift */; };
 		B5C656B92B23E0E0002F5536 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C656B82B23E0E0002F5536 /* Launch Screen.storyboard */; };
+		B5C6766E2B2D4188008099CA /* MarkdownImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C6766D2B2D4188008099CA /* MarkdownImage.swift */; };
 		B5C81F662B15195D005B3BBD /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C81F652B15195D005B3BBD /* DismissButton.swift */; };
 		B5C81F722B15913B005B3BBD /* CommentRepliesViewSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C81F712B15913B005B3BBD /* CommentRepliesViewSnapshotTest.swift */; };
 		B5C81F752B159A17005B3BBD /* CommentRepliesViewUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C81F742B159A17005B3BBD /* CommentRepliesViewUnitTests.swift */; };
@@ -182,6 +183,7 @@
 		B5A199B42AF46CC500243A5E /* RecentsViewModelUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsViewModelUnitTests.swift; sourceTree = "<group>"; };
 		B5A199C02AF476FC00243A5E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		B5A199C22AF47CDF00243A5E /* DateExtensionUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionUnitTests.swift; sourceTree = "<group>"; };
+		B5B8F7E42B29579D0081D7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B5C552A02B099028005C7AA7 /* InjectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionService.swift; sourceTree = "<group>"; };
 		B5C552A72B09AC9D005C7AA7 /* Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injections.swift; sourceTree = "<group>"; };
 		B5C552AD2B0A5C7F005C7AA7 /* InjectionServiceUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionServiceUnitTests.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		B5C552C12B0AAECD005C7AA7 /* CommentRepliesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepliesView.swift; sourceTree = "<group>"; };
 		B5C552C72B0AB0CE005C7AA7 /* CommentRepliesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepliesViewModel.swift; sourceTree = "<group>"; };
 		B5C656B82B23E0E0002F5536 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B5C6766D2B2D4188008099CA /* MarkdownImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownImage.swift; sourceTree = "<group>"; };
 		B5C81F652B15195D005B3BBD /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
 		B5C81F712B15913B005B3BBD /* CommentRepliesViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepliesViewSnapshotTest.swift; sourceTree = "<group>"; };
 		B5C81F742B159A17005B3BBD /* CommentRepliesViewUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepliesViewUnitTests.swift; sourceTree = "<group>"; };
@@ -322,6 +325,7 @@
 		B5633BB02AE1715A00A3BE16 /* TabNews */ = {
 			isa = PBXGroup;
 			children = (
+				B5B8F7E42B29579D0081D7E9 /* Info.plist */,
 				B5D8AE662AE58A8F00F4CA21 /* Localizable.xcstrings */,
 				B5D8AEAE2AE5CA9800F4CA21 /* Core */,
 				B5910EDD2AE1DF89000E00D5 /* DTOs */,
@@ -367,6 +371,7 @@
 				B5CE78872B0024EB00241606 /* CommentCard.swift */,
 				B5CE78972B0067C500241606 /* ExpandableMarkdownBody.swift */,
 				B5C81F652B15195D005B3BBD /* DismissButton.swift */,
+				B5C6766D2B2D4188008099CA /* MarkdownImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -846,6 +851,7 @@
 				B5CE78862B00243A00241606 /* CommentsSectionViewModel.swift in Sources */,
 				B5A199692AF40AFD00243A5E /* PreviewMocks.swift in Sources */,
 				B5CD272B2B1FD054007EE9D9 /* EnvironmentService.swift in Sources */,
+				B5C6766E2B2D4188008099CA /* MarkdownImage.swift in Sources */,
 				B5CE78982B0067C500241606 /* ExpandableMarkdownBody.swift in Sources */,
 				B5DEE45E2AF80BC40094D926 /* ContentViewModel.swift in Sources */,
 				B5910EDC2AE1DEE7000E00D5 /* ContentRepository.swift in Sources */,
@@ -1083,12 +1089,16 @@
 				DEVELOPMENT_TEAM = 4K4DDWQUFM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TabNews/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1120,12 +1130,16 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTABILITY = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TabNews/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

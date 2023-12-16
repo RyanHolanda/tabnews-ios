@@ -2,6 +2,7 @@ import Foundation
 import Swifter
 
 class LocalServer {
+    static let shared: LocalServer = .init()
     private let server: HttpServer = .init()
     deinit { stop() }
 
@@ -10,6 +11,7 @@ class LocalServer {
     }
 
     func run() {
+        if server.operating { return }
         setRoutes()
         try? server.start(8080)
     }

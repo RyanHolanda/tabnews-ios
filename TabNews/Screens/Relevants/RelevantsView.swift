@@ -26,24 +26,25 @@ struct RelevantsView: View {
 
     var body: some View {
         NavigationStack {
-            switch viewModel.state {
-            case .loading: ProgressView()
-            case .error: ErrorView {
-                    Task {
-                        await viewModel.fetchRelevantsPosts()
+            Group {
+                switch viewModel.state {
+                case .loading: ProgressView()
+                case .error: ErrorView {
+                        Task {
+                            await viewModel.fetchRelevantsPosts()
+                        }
+                    }
+                default: PostsList(
+                        posts: viewModel.posts,
+                        shouldPaginate: viewModel.hasMoreItems && !viewModel.posts.isEmpty
+                    ) {
+                        await viewModel.paginateData()
+                    }
+                    onRefresh: {
+                        await viewModel.refreshPosts()
                     }
                 }
-            default: PostsList(
-                    posts: viewModel.posts,
-                    shouldPaginate: viewModel.hasMoreItems && !viewModel.posts.isEmpty
-                ) {
-                    await viewModel.paginateData()
-                }
-                onRefresh: {
-                    await viewModel.refreshPosts()
-                }
-                .navigationTitle(String(localized: .localizable.relevantsViewRelevants))
-            }
+            }.navigationTitle(String(localized: .localizable.relevantsViewRelevants))
         }
     }
 }

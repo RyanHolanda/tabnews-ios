@@ -72,26 +72,24 @@ struct CommentDTO: DTOProtocol, Hashable {
         )
     }
 
-    #if DEBUG
-        static func fixture() -> CommentDTO {
-            CommentDTO(
-                id: UUID().uuidString,
-                ownerId: "OWNER_ID",
-                parentId: "PARENT_ID",
-                slug: "SLUG",
-                body: """
-                Parabéns pela clareza da documentação! O interessante é que, um material desse,
-                pode ser um ótimo treinamento com dados reais, gerando programa real, que realmente faz algo.
-                """,
-                publishedAt: "2010-11-25T22:21:17.146Z",
-                updatedAt: "2010-11-25T22:21:17.146Z",
-                ownerUsername: "marge-simpson",
-                tabcoins: 123,
-                children: [],
-                replies: 0
-            )
-        }
-    #endif
+    static func fixture() -> CommentDTO {
+        CommentDTO(
+            id: UUID().uuidString,
+            ownerId: "OWNER_ID",
+            parentId: "PARENT_ID",
+            slug: "SLUG",
+            body: """
+            Parabéns pela clareza da documentação! O interessante é que, um material desse,
+            pode ser um ótimo treinamento com dados reais, gerando programa real, que realmente faz algo.
+            """,
+            publishedAt: "2010-11-25T22:21:17.146Z",
+            updatedAt: "2010-11-25T22:21:17.146Z",
+            ownerUsername: "marge-simpson",
+            tabcoins: 123,
+            children: [],
+            replies: 0
+        )
+    }
 
     static func empty() -> CommentDTO {
         CommentDTO(

@@ -76,26 +76,24 @@ struct ContentDTO: DTOProtocol {
         )
     }
 
-    #if DEBUG
-        static func fixture() -> ContentDTO {
-            ContentDTO(
-                id: "CONTENT_ID",
-                ownerId: "OWNER_ID",
-                slug: "5-fatos-mais-complexos-da-programacao",
-                title: "5 Fatos mais complexos da programação",
-                createdAt: "2010-07-23T16:12:27.009Z",
-                updatedAt: "2010-07-23T16:12:27.009Z",
-                ownerUsername: "homer-simpson",
-                tabcoins: 3,
-                commentsCount: 7,
-                body: """
-                #### Markdown Headline
-                _Italic_
-                **Bold**
-                Paragraph
-                [Link](http://link.com)
-                """
-            )
-        }
-    #endif
+    static func fixture() -> ContentDTO {
+        ContentDTO(
+            id: "CONTENT_ID",
+            ownerId: "OWNER_ID",
+            slug: "5-fatos-mais-complexos-da-programacao",
+            title: "5 Fatos mais complexos da programação",
+            createdAt: "2010-07-23T16:12:27.009Z",
+            updatedAt: "2010-07-23T16:12:27.009Z",
+            ownerUsername: "homer-simpson",
+            tabcoins: 3,
+            commentsCount: 7,
+            body: """
+            #### Markdown Headline
+            _Italic_
+            **Bold**
+            Paragraph
+            [Link](http://link.com)
+            """
+        )
+    }
 }

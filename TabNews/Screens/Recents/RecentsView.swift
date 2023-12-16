@@ -18,24 +18,25 @@ struct RecentsView: View {
 
     var body: some View {
         NavigationStack {
-            switch viewModel.state {
-            case .loading: ProgressView()
-            case .error: ErrorView {
-                    Task {
-                        await viewModel.fetchRecentsPosts()
+            Group {
+                switch viewModel.state {
+                case .loading: ProgressView()
+                case .error: ErrorView {
+                        Task {
+                            await viewModel.fetchRecentsPosts()
+                        }
+                    }
+                default: PostsList(
+                        posts: viewModel.posts,
+                        shouldPaginate: viewModel.hasMoreItems && !viewModel.posts.isEmpty
+                    ) {
+                        await viewModel.paginateData()
+                    }
+                    onRefresh: {
+                        await viewModel.refreshPosts()
                     }
                 }
-            default: PostsList(
-                    posts: viewModel.posts,
-                    shouldPaginate: viewModel.hasMoreItems && !viewModel.posts.isEmpty
-                ) {
-                    await viewModel.paginateData()
-                }
-                onRefresh: {
-                    await viewModel.refreshPosts()
-                }
-                .navigationTitle(String(localized: .localizable.recentsViewRecents))
-            }
+            }.navigationTitle(String(localized: .localizable.recentsViewRecents))
         }
     }
 }

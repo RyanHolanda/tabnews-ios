@@ -7,9 +7,9 @@ struct MarkdownBody: View {
     }
 
     let content: String
-
     var body: some View {
         Markdown(content)
+            .markdownImageProvider(MarkdownImage())
             .markdownTheme(.custom)
             .textSelection(.enabled)
     }

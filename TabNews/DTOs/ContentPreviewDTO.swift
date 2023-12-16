@@ -60,19 +60,17 @@ struct ContentPreviewDTO: DTOProtocol {
         )
     }
 
-    #if DEBUG
-        static func fixture() -> ContentPreviewDTO {
-            ContentPreviewDTO(
-                id: "id",
-                ownerId: "owner_id",
-                parentId: "parent_id",
-                slug: "slug",
-                title: "Curadoria coletiva de conteúdos sobre performance",
-                publishedAt: "2010-10-19T19:48:49.497Z",
-                ownerUsername: "homer-simpson",
-                tabcoins: 0,
-                comentsCount: 0
-            )
-        }
-    #endif
+    static func fixture() -> ContentPreviewDTO {
+        ContentPreviewDTO(
+            id: "id",
+            ownerId: "owner_id",
+            parentId: "parent_id",
+            slug: "slug",
+            title: "Curadoria coletiva de conteúdos sobre performance",
+            publishedAt: "2010-10-19T19:48:49.497Z",
+            ownerUsername: "homer-simpson",
+            tabcoins: 0,
+            comentsCount: 0
+        )
+    }
 }

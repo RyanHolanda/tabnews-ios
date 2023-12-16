@@ -13,7 +13,7 @@ struct ContentView: View {
     let slug: String
     let ownerUsername: String
     @Injected("date.now") private var nowDate: Date
-    
+
     var body: some View {
         GeometryReader { geometry in
             ScrollView {

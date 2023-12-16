@@ -75,6 +75,17 @@
         }
       }
     },
+    "CopyImage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiar Imagem"
+          }
+        }
+      }
+    },
     "DateExtensionDayAgo" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -289,6 +300,17 @@
         }
       }
     },
+    "SaveImage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar Imagem"
+          }
+        }
+      }
+    },
     "SeeMore" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -296,6 +318,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ver mais"
+          }
+        }
+      }
+    },
+    "ShareImage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhar Imagem"
           }
         }
       }

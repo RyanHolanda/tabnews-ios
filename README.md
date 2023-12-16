@@ -21,4 +21,7 @@ To run tests from the CLI, navigate to the project root and use the following co
 
 • `make test-snapshots` (This command will run only the snapshot test target)
 
+## Updating Snapshot Test Images
+To update Snapshot Test Images, just set the global variable "updateSnapshots" to true
+
 

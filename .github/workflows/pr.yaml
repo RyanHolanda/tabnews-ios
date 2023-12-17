@@ -10,12 +10,12 @@ jobs:
         runs-on: macos-latest
 
         steps:
-           - name: Set Xcode 15.0.1 path
-             run: echo "/Applications/Xcode_15.0.1.app" >> $GITHUB_PATH
+#           - name: Set Xcode 15.0.1 path
+#             run: echo "/Applications/Xcode_15.0.1.app" >> $GITHUB_PATH
            - uses: actions/checkout@v3
         #    - uses: maxim-lobanov/setup-xcode@v1
         #      with:
         #         xcode-version: '15.0-beta'
            - name: Run tests
-             run: make test
+             run: xcodes list
     

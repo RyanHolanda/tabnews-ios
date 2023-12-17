@@ -19,6 +19,6 @@ jobs:
             - name: "Run Linter"
               run: swiftlint lint --strict
             - name: Run tests
-              run: xcodebuild test -scheme TabNewsSnapshotTests -destination 'platform=iOS Simulator,name=${testDevice},OS=17'
+              run: make test
 
     

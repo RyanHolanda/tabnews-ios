@@ -18,8 +18,6 @@ jobs:
               run: swiftformat . --lint
             - name: "Run Linter"
               run: swiftlint lint --strict
-            - name: Skip Plugins Validation
-              run: xcodebuild -skipPackagePluginValidation
             - name: Run tests
               run: make test-unit
 

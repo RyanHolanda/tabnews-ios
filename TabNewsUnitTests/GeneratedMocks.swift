@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: TabNews/Core/HTTP.swift at 2023-12-17 9:45:32 PM +0000
+// MARK: - Mocks generated from file: TabNews/Core/HTTP.swift at 2023-12-17 11:09:44 PM +0000
 
 
 import Cuckoo
@@ -246,7 +246,7 @@ import Foundation
 
 
 
-// MARK: - Mocks generated from file: TabNews/Repositories/ContentRepository.swift at 2023-12-17 9:45:32 PM +0000
+// MARK: - Mocks generated from file: TabNews/Repositories/ContentRepository.swift at 2023-12-17 11:09:44 PM +0000
 
 
 import Cuckoo

@@ -21,6 +21,6 @@ jobs:
             - name: Run Linter
               run: swiftlint lint --strict
             - name: Run tests
-              run: make test && exit ${PIPESTATUS[0]}
+              run: make test
 
     

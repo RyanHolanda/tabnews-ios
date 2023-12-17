@@ -11,9 +11,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3
-            # - name: Install Xcode Version
-            #   run: xcodes install 15.0.1
-            - name: Select Xcode Version
+            - name: Set Xcode Version
               run: xcodes select 15.0.1
             - name: Run tests
               run: make test

@@ -19,6 +19,6 @@ jobs:
             - name: "Run Linter"
               run: swiftlint lint --strict
             - name: Run tests
-              run: xcodebuild -resolvePackageDependencies && make test
+              run: make test-unit
 
     

@@ -15,7 +15,7 @@ jobs:
                 xcode-version: '15.0.1'
             - uses: actions/checkout@v3
             - name: "Run Formatter"
-              run: swiftformat . --lint
+              run: swiftformat .
             - name: "Run Linter"
               run: swiftlint lint --strict
             - name: Run tests

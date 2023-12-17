@@ -38,7 +38,7 @@ import XCTest
         let tryAgainButton: InspectableView = try sut!.inspect().find(button: String(localized: .localizable.tryAgain))
         try tryAgainButton.tap()
 
-        try await Task.sleep(nanoseconds: 100000)
+        try await Task.sleep(nanoseconds: 1_000_000_000)
 
         verify(contentRepository, times(2)).getRecentsPosts(page: any(), perPage: any()).with(returnType: [ContentPreviewDTO].self)
     }

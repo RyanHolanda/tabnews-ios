@@ -620,7 +620,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B5D8AE9A2AE5A18C00F4CA21 /* PBXTargetDependency */,
+				B5CD75722B2F774D00157946 /* PBXTargetDependency */,
 				B5D8AE762AE5901400F4CA21 /* PBXTargetDependency */,
 			);
 			name = TabNewsSnapshotTests;
@@ -948,6 +948,10 @@
 			target = B5633BAD2AE1715A00A3BE16 /* TabNews */;
 			targetProxy = B5A199772AF41A5E00243A5E /* PBXContainerItemProxy */;
 		};
+		B5CD75722B2F774D00157946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B5CD75712B2F774D00157946 /* XCStringsToolPlugin */;
+		};
 		B5D8AE652AE58A1500F4CA21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = B5D8AE642AE58A1500F4CA21 /* XCStringsToolPlugin */;
@@ -965,10 +969,6 @@
 		B5D8AE972AE5A16D00F4CA21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = B5D8AE962AE5A16D00F4CA21 /* XCStringsToolPlugin */;
-		};
-		B5D8AE9A2AE5A18C00F4CA21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = B5D8AE992AE5A18C00F4CA21 /* XCStringsToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1387,7 +1387,7 @@
 			repositoryURL = "https://github.com/liamnichols/xcstrings-tool";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.1.1;
 			};
 		};
 		B5D8AE792AE5925C00F4CA21 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
@@ -1432,6 +1432,11 @@
 			package = B5D8AEA82AE5A83400F4CA21 /* XCRemoteSwiftPackageReference "ViewInspector" */;
 			productName = ViewInspector;
 		};
+		B5CD75712B2F774D00157946 /* XCStringsToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5D8AE612AE58A0100F4CA21 /* XCRemoteSwiftPackageReference "xcstrings-tool" */;
+			productName = "plugin:XCStringsToolPlugin";
+		};
 		B5D1E7792AFC4A8800B83391 /* MarkdownUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B5D1E7782AFC4A8800B83391 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
@@ -1463,11 +1468,6 @@
 			productName = "xcstrings-tool";
 		};
 		B5D8AE962AE5A16D00F4CA21 /* XCStringsToolPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B5D8AE612AE58A0100F4CA21 /* XCRemoteSwiftPackageReference "xcstrings-tool" */;
-			productName = "plugin:XCStringsToolPlugin";
-		};
-		B5D8AE992AE5A18C00F4CA21 /* XCStringsToolPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B5D8AE612AE58A0100F4CA21 /* XCRemoteSwiftPackageReference "xcstrings-tool" */;
 			productName = "plugin:XCStringsToolPlugin";

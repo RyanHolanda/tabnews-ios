@@ -14,9 +14,11 @@ jobs:
               with:
                 xcode-version: '15.0.1'
             - uses: actions/checkout@v3
-            - name: "Run Formatter"
+            - name: Install xcpretty
+              run: gem install xcpretty
+            - name: Run Formatter
               run: swiftformat .
-            - name: "Run Linter"
+            - name: Run Linter
               run: swiftlint lint --strict
             - name: Run tests
               run: make test-unit

@@ -152,6 +152,7 @@
 		B53626072AF6A16D007700A5 /* RelevantsViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelevantsViewSnapshotTest.swift; sourceTree = "<group>"; };
 		B536260F2AF6D9B1007700A5 /* RelevantsViewUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelevantsViewUnitTests.swift; sourceTree = "<group>"; };
 		B53626142AF6DA27007700A5 /* RelevantsViewModelUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelevantsViewModelUnitTests.swift; sourceTree = "<group>"; };
+		B5599F962B2F3798008FAAA1 /* pr.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = pr.yaml; sourceTree = "<group>"; };
 		B55E08C62B228FF500BD8817 /* TabNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55E08C72B228FF500BD8817 /* TabNewsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabNewsSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55E08C82B228FF500BD8817 /* TabNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabNewsUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +294,22 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		B5599F942B2E4FA6008FAAA1 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				B5599F952B2E4FB3008FAAA1 /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		B5599F952B2E4FB3008FAAA1 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				B5599F962B2F3798008FAAA1 /* pr.yaml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
 		B55E08D52B22982300BD8817 /* LocalServer */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +327,7 @@
 				B5633BC92AE172C900A3BE16 /* .swiftlint.yml */,
 				B56B1D832B0905CA00D00A21 /* .swiftformat */,
 				B5D8AE8C2AE59C9F00F4CA21 /* TestPlan.xctestplan */,
+				B5599F942B2E4FA6008FAAA1 /* .github */,
 				B56B1D772B081E7500D00A21 /* BuildTools */,
 				B5633BB02AE1715A00A3BE16 /* TabNews */,
 				B5D8AE6E2AE58FB500F4CA21 /* TabNewsSnapshotTests */,

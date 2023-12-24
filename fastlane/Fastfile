@@ -7,6 +7,7 @@ platform :ios do
       build_for_testing: true,
       scheme: "TabNews (Release)",
       cloned_source_packages_path: "SourcePackages",
+      xcargs: "-skipPackagePluginValidation",
     )
   end
 end

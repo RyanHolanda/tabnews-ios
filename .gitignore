@@ -17,6 +17,7 @@ DerivedData/
 *.xcbkptlist
 BuildTools/.build
 BuildTools/.swiftpm
+SourcePackages/
 
 *.hmap
 *.ipa

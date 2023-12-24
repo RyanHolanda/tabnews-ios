@@ -4,9 +4,9 @@ platform :ios do
   desc "Build the TabNews application"
   lane :build_for_testing do
     scan(
-      build_for_testing: true
-      scheme: "TabNews (Release)"
-      cloned_source_packages_path: SourcePackages
+      build_for_testing: true,
+      scheme: "TabNews (Release)",
+      cloned_source_packages_path: "SourcePackages",
     )
   end
 end

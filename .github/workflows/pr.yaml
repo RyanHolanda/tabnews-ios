@@ -21,6 +21,6 @@ jobs:
             - name: Run Linter
               run: swiftlint lint --strict
             - name: Run tests
-              run: echo ${{secrets.APPLE_ID}}
+              run: echo ${{ secrets.APPLE_ID }}
 
     

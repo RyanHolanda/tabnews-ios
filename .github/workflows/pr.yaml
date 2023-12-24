@@ -20,7 +20,13 @@ jobs:
               run: swiftformat .
             - name: Run Linter
               run: swiftlint lint --strict
-            - name: Run tests
-              run: echo ${{ secrets.APPLE_ID }}
+            - name: Cache Packages
+              uses: actions/cache@v3
+              with:
+                path: SourcePackages
+                key: ${{ runner.os }}-packages-${{ hashFiles('**/Package.resolved') }}
+                restore-keys: ${{runner.os}}-packages-
+            - name: Build
+              run: fastlane build_for_testing
 
     

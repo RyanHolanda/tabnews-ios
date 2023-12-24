@@ -134,6 +134,8 @@
 		B5210B4C2AEDBF5400B18B96 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		B5210B772AEECBDD00B18B96 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		B5210B8C2AEEDAEC00B18B96 /* Snapshooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshooter.swift; sourceTree = "<group>"; };
+		B523DBA12B38E01A00A5A304 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		B523DBA22B38E01A00A5A304 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		B52815562B1D334B0003D245 /* ContentRobot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRobot.swift; sourceTree = "<group>"; };
 		B52815572B1D334B0003D245 /* PostsListRobot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListRobot.swift; sourceTree = "<group>"; };
 		B52815582B1D334B0003D245 /* CommentsSectionRobot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsSectionRobot.swift; sourceTree = "<group>"; };
@@ -269,6 +271,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B523DBA02B38E01A00A5A304 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				B523DBA12B38E01A00A5A304 /* Appfile */,
+				B523DBA22B38E01A00A5A304 /* Fastfile */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
 		B52815552B1D334B0003D245 /* Robots */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +339,7 @@
 				B5210B772AEECBDD00B18B96 /* Makefile */,
 				B5633BC92AE172C900A3BE16 /* .swiftlint.yml */,
 				B5D8AE8C2AE59C9F00F4CA21 /* TestPlan.xctestplan */,
+				B523DBA02B38E01A00A5A304 /* fastlane */,
 				B5599F942B2E4FA6008FAAA1 /* .github */,
 				B56B1D772B081E7500D00A21 /* BuildTools */,
 				B5633BB02AE1715A00A3BE16 /* TabNews */,

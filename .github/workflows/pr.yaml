@@ -28,7 +28,7 @@ jobs:
                 key: ${{ runner.os }}-packages-${{ hashFiles('**/Package.resolved') }}
                 restore-keys: ${{runner.os}}-packages-
             - name: Run tests
-              run: bundle exec test
+              run: bundle exec fastlane test
               env:
                 HAS_PACKAGES_CACHE_HIT: ${{ steps.packages-cache.outputs.cache-hit == 'true' }}
 

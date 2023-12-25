@@ -5,14 +5,14 @@ default_platform(:ios)
 platform :ios do
   desc "Build and Run automated Tests"
   lane :test do
-    scan(
-      build_for_testing: true,
-      scheme: "TabNewsUnitTests",
-      cloned_source_packages_path: "SourcePackages",
-      disable_package_automatic_updates: true,
-      skip_package_dependencies_resolution: ENV["HAS_PACKAGES_CACHE_HIT"],
-      xcargs: "-skipPackagePluginValidation",
-    )
+    # scan(
+    #   build_for_testing: true,
+    #   scheme: "TabNewsUnitTests",
+    #   cloned_source_packages_path: "SourcePackages",
+    #   disable_package_automatic_updates: true,
+    #   skip_package_dependencies_resolution: ENV["HAS_PACKAGES_CACHE_HIT"],
+    #   xcargs: "-skipPackagePluginValidation",
+    # )
     
     run_tests(
       xcargs: "-skipPackagePluginValidation",

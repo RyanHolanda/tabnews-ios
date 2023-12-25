@@ -19,7 +19,8 @@ platform :ios do
       disable_package_automatic_updates: true,
       cloned_source_packages_path: "SourcePackages",
       scheme: "TabNewsUnitTests",
-      devices: ["iPhone 15"],
+      skip_package_dependencies_resolution: ENV["HAS_PACKAGES_CACHE_HIT"],
+      # devices: ["iPhone 15"],
     )
   end
 end

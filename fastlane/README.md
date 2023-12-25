@@ -15,13 +15,13 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
-### ios build_for_testing
+### ios test
 
 ```sh
-[bundle exec] fastlane ios build_for_testing
+[bundle exec] fastlane ios test
 ```
 
-Build the TabNews application
+Build and Run automated Tests
 
 ----
 

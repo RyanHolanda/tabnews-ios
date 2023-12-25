@@ -22,11 +22,14 @@ jobs:
               run: swiftlint lint --strict
             - name: Cache Packages
               uses: actions/cache@v3
+              id: packages-cache
               with:
                 path: SourcePackages
                 key: ${{ runner.os }}-packages-${{ hashFiles('**/Package.resolved') }}
                 restore-keys: ${{runner.os}}-packages-
-            - name: Build
-              run: fastlane build_for_testing
+            - name: Run tests
+              run: fastlane test
+              env:
+                HAS_PACKAGES_CACHE_HIT: ${{ steps.packages-cache.outputs.cache-hit == 'true' }}
 
     

@@ -1,5 +1,3 @@
-ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "120"
-
 default_platform(:ios)
 
 platform :ios do
@@ -12,6 +10,14 @@ platform :ios do
       disable_package_automatic_updates: true,
       skip_package_dependencies_resolution: ENV["HAS_PACKAGES_CACHE_HIT"],
       xcargs: "-skipPackagePluginValidation",
+    )
+    
+    run_tests(
+      xcargs: "-skipPackagePluginValidation",
+      disable_package_automatic_updates: true,
+      cloned_source_packages_path: "SourcePackages",
+      scheme: "TabNewsUnitTests",
+      devices: ["iPhone 15"],
     )
   end
 end

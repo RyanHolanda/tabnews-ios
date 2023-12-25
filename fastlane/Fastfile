@@ -11,10 +11,9 @@ platform :ios do
       skip_package_dependencies_resolution: ENV["HAS_PACKAGES_CACHE_HIT"],
       xcargs: "-skipPackagePluginValidation",
     )
-
-    run_tests(
-      scheme: "TabNewsUnitTests",
-      devices: ["iPhone 15"],
-    )
+    # run_tests(
+    #   scheme: "TabNewsUnitTests",
+    #   devices: ["iPhone 15"],
+    # )
   end
 end

@@ -3,7 +3,8 @@ ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "120"
 default_platform(:ios)
 
 platform :ios do
-  desc "Build and Run automated Tests"    
+  desc "Build and Run automated Tests"
+  lane :test do
     run_tests(
       scheme: "TabNews (Debug)",
       devices: ["iPhone 15"],

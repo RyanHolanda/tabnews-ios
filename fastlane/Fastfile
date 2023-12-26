@@ -15,8 +15,8 @@ platform :ios do
     # )
     
     run_tests(
-      device: "iPhone 15",
-      scheme: "TabNewsUnitTests",
+      device: "iPhone 8",
+      scheme: "TabNewsUnitTests"
       # xcargs: "-skipPackagePluginValidation",
       # ensure_devices_found: true,
       # disable_package_automatic_updates: true,

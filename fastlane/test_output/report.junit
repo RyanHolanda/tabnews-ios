@@ -1,2 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites tests='0' failures='0'/>
+<testsuites name='TabNewsUITests.xctest' tests='11' failures='0'>
+  <testsuite name='TabNewsUITests.ContentViewUITests' tests='7' failures='0'>
+    <testcase classname='TabNewsUITests.ContentViewUITests' name='testGoingBackgroundAndComingBack' time='4.367'/>
+    <testcase classname='TabNewsUITests.ContentViewUITests' name='testOpenCommentReplies' time='8.208'/>
+    <testcase classname='TabNewsUITests.ContentViewUITests' name='testCloseCommentRepliesSheetAfterNavigatingThroughCommentReplies' time='10.292'/>
+    <testcase classname='TabNewsUITests.ContentViewUITests' name='testCloseCommentRepliesSheet' time='8.865'/>
+    <testcase classname='TabNewsUITests.ContentViewUITests' name='testCopyPostLink' time='5.612'/>
+    <testcase classname='TabNewsUITests.ContentViewUITests' name='testSharePostAction' time='5.366'/>
+    <testcase classname='TabNewsUITests.ContentViewUITests' name='testBack' time='4.234'/>
+  </testsuite>
+  <testsuite name='TabNewsUITests.RelevantsViewUITests' tests='1' failures='0'>
+    <testcase classname='TabNewsUITests.RelevantsViewUITests' name='testOpenPost' time='3.899'/>
+  </testsuite>
+  <testsuite name='TabNewsUITests.MainViewUITests' tests='2' failures='0'>
+    <testcase classname='TabNewsUITests.MainViewUITests' name='testGoToRelevantsView' time='3.128'/>
+    <testcase classname='TabNewsUITests.MainViewUITests' name='testGoToRelevantsThenRecentsTab' time='3.489'/>
+  </testsuite>
+  <testsuite name='TabNewsUITests.RecentsViewUITests' tests='1' failures='0'>
+    <testcase classname='TabNewsUITests.RecentsViewUITests' name='testOpenPost' time='3.946'/>
+  </testsuite>
+</testsuites>

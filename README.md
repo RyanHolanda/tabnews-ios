@@ -12,8 +12,10 @@ This app is a TabNews client for iOS. You can see the original TabNews [here](ht
 To run this app on your machine is very easy. Just clone this repository, Build and Run the "TabNews" Target
 
 ## Run Tests
-To run tests from the CLI TabNews uses Fastlane(Be sure to have it installed), navigate to the project root and use the following command:
+To run tests from the CLI we use Fastlane(Be sure to have it installed). Now, Navigate to the project root and use the following command:
 
 • `bundle exec fastlane test` (This command will run all test targets)
+
+To run tests from Xcode, select the TabNews target in the debug version, and then go to Product > Test
 
 

@@ -16,6 +16,7 @@ To run tests from the CLI we use Fastlane(Be sure to have it installed). Now, Na
 
 • `bundle exec fastlane test` (This command will run all test targets)
 
-To run tests from Xcode, select the TabNews target in the debug version, and then go to Product > Test
+**To run tests from Xcode:**\
+Select the TabNews target in the debug version, and then, Product > Test
 
 

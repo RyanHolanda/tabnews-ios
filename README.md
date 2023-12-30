@@ -19,7 +19,7 @@ To run tests from the CLI we use Fastlane(Be sure to have it installed). Now, Na
 **To run tests from Xcode:**\
 Select the TabNews target in the debug version, and then, Product > Test
 
-## Updating Snapshot Tests
-To update snapshot tests, just to to `Snapshooter.swift` and change the variable updateSnapshots to true. After updating, just set it as false again
+## Updating Snapshots from Snapshot Tests
+To update Snapshots, just go to `Snapshooter.swift` and change the variable `updateSnapshots` to true. After updating, just set it as false again
 
 

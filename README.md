@@ -14,6 +14,6 @@ To run this app on your machine is very easy. Just clone this repository, Build 
 ## Run Tests
 To run tests from the CLI TabNews uses Fastlane(Be sure to have it installed), navigate to the project root and use the following command:
 
-• `bundle exect Fastlane test` (This command will run all test targets)
+• `bundle exec fastlane test` (This command will run all test targets)
 
 

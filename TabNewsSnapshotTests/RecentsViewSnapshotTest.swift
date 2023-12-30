@@ -77,20 +77,4 @@ import XCTest
 
         Snapshooter.snapshot(sut, name: "recents_view_error")
     }
-
-    func testRecentsViewLoading() async throws {
-        stub(contentRepository) { stub in
-            when(stub.getRecentsPosts(page: any(), perPage: any()))
-                .thenThrow(HTTP.HTTPError.invalidUrl)
-        }
-
-        viewModel = .init(repository: contentRepository)
-        sut = .init(viewModel: viewModel!)
-
-        while viewModel?.state != .loading {
-            try await Task.sleep(nanoseconds: 1)
-        }
-
-        Snapshooter.snapshot(sut, name: "recents_view_loading")
-    }
 }

@@ -16,12 +16,16 @@ struct PostsList: View {
                 }
 
                 if shouldPaginate {
-                    ProgressView()
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .padding(.vertical, 40)
-                        .task {
-                            await onPaginate()
-                        }
+                    ForEach(0 ..< 2, id: \.self) { _ in
+                        PostCard(contentPreview: .fixture())
+                            .redacted(reason: .placeholder)
+                            .disabled(true)
+
+                        Divider()
+                    }
+                    .task {
+                        await onPaginate()
+                    }
                 }
             }
             .padding()

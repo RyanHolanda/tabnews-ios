@@ -4,7 +4,8 @@
       "id" : "6534AB7A-E8B7-4865-A438-862324486829",
       "name" : "Test Configurations",
       "options" : {
-        "testTimeoutsEnabled" : true
+        "testTimeoutsEnabled" : true,
+        "userAttachmentLifetime" : "deleteOnSuccess"
       }
     }
   ],
@@ -34,7 +35,6 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:TabNews.xcodeproj",
         "identifier" : "B5D8AE6C2AE58FB500F4CA21",
@@ -42,7 +42,6 @@
       }
     },
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:TabNews.xcodeproj",
         "identifier" : "B5D8AE822AE59B1400F4CA21",

@@ -4,7 +4,7 @@ import XCTest
 
 final class ErrorViewUnitTest: XCTestCase {
     func testErrorViewCallback() async throws {
-        var counter: Int = 1
+        var counter: Int = .init(1)
 
         let view: ErrorView = .init(title: "Error", description: "Please try again") {
             counter = 2

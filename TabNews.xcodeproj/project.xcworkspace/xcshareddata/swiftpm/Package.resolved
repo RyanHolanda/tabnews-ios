@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/liamnichols/xcstrings-tool",
       "state" : {
-        "revision" : "888dad05feafe2982e12c039c1b075e205f615ab",
-        "version" : "0.1.0"
+        "revision" : "0c77774313bb148f726b1d31b016a4e739c85f6e",
+        "version" : "0.1.1"
       }
     }
   ],

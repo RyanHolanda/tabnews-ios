@@ -17,6 +17,9 @@ DerivedData/
 *.xcbkptlist
 BuildTools/.build
 BuildTools/.swiftpm
+SourcePackages/
+fastlane/test_output
+fastlane/report.xml
 
 *.hmap
 *.ipa

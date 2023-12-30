@@ -1,26 +1,36 @@
 {
   "configurations" : [
     {
-      "id" : "E9185360-1AC7-470F-82C9-18BF9071D02B",
-      "name" : "Configuration 1",
+      "id" : "6534AB7A-E8B7-4865-A438-862324486829",
+      "name" : "Test Configurations",
       "options" : {
-
+        "testTimeoutsEnabled" : true
       }
     }
   ],
   "defaultOptions" : {
-    "defaultTestExecutionTimeAllowance" : 60,
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:TabNews.xcodeproj",
+          "identifier" : "B5633BAD2AE1715A00A3BE16",
+          "name" : "TabNews"
+        }
+      ]
+    },
+    "defaultTestExecutionTimeAllowance" : 120,
     "language" : "pt-BR",
     "locationScenario" : {
       "identifier" : "Rio de Janeiro, Brazil",
       "referenceType" : "built-in"
     },
-    "maximumTestExecutionTimeAllowance" : 60,
+    "maximumTestExecutionTimeAllowance" : 120,
     "region" : "BR",
     "repeatInNewRunnerProcess" : true,
     "testExecutionOrdering" : "random",
     "testRepetitionMode" : "retryOnFailure",
-    "testTimeoutsEnabled" : true
+    "testTimeoutsEnabled" : true,
+    "userAttachmentLifetime" : "keepAlways"
   },
   "testTargets" : [
     {
@@ -40,19 +50,8 @@
       }
     },
     {
-      "selectedTests" : [
-        "ContentViewUITests\/testBack()",
-        "ContentViewUITests\/testCloseCommentRepliesSheet()",
-        "ContentViewUITests\/testCloseCommentRepliesSheetAfterNavigatingThroughCommentReplies()",
-        "ContentViewUITests\/testCopyPostLink()",
-        "ContentViewUITests\/testGoingBackgroundAndComingBack()",
-        "ContentViewUITests\/testOpenCommentReplies()",
-        "ContentViewUITests\/testSharePostAction()",
-        "ContentViewUITests\/testSharePostLink()",
-        "MainViewUITests\/testGoToRelevantsThenRecentsTab()",
-        "MainViewUITests\/testGoToRelevantsView()",
-        "RecentsViewUITests\/testOpenPost()",
-        "RelevantsViewUITests\/testOpenPost()"
+      "skippedTests" : [
+        "BaseUITestCase"
       ],
       "target" : {
         "containerPath" : "container:TabNews.xcodeproj",

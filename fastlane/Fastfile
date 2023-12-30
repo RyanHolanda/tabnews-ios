@@ -1,0 +1,22 @@
+ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "120"
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Run automated Tests"
+  lane :test do
+    run_tests(
+      scheme: "TabNews(Debug)",
+      devices: ["iPhone 15"],
+      reset_simulator: true,
+      parallel_testing: true,
+      ensure_devices_found: true,
+      disable_package_automatic_updates: true,
+      cloned_source_packages_path: "SourcePackages",
+      skip_package_dependencies_resolution: File.directory?("../SourcePackages"),
+      xcargs: "-skipPackagePluginValidation",
+      number_of_retries: 3,
+      code_coverage: true,
+    )
+  end
+end

@@ -1,5 +1,6 @@
 disabled_rules:
 - trailing_whitespace
+- trailing_comma
 
 opt_in_rules:
 - empty_count
@@ -15,6 +16,7 @@ excluded:
 - "*/GeneratedMocks.swift"
 - "BuildTools"
 - "TabNewsUITests/LocalServer/Responses"
+- "SourcePackages/"
 
 line_length:
     warning: 181

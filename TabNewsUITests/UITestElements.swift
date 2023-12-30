@@ -13,7 +13,6 @@ extension UITestElements {
             return app
         } else {
             currentApp = XCUIApplication()
-            LocalServer.shared.run()
             return currentApp!
         }
     }

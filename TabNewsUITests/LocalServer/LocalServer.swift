@@ -3,7 +3,8 @@ import Swifter
 
 class LocalServer {
     static let shared: LocalServer = .init()
-    private let server: HttpServer = .init()
+    let server: HttpServer = .init()
+
     deinit { stop() }
 
     func stop() {

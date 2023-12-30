@@ -8,8 +8,8 @@ platform :ios do
     run_tests(
       scheme: "TabNews(Debug)",
       devices: ["iPhone 15"],
-      reset_simulator: true,
-      parallel_testing: true,
+      reset_simulator: false,
+      parallel_testing: false, # Parallel_testing as true is causing concurrency issues in UI Testing local server
       ensure_devices_found: true,
       disable_package_automatic_updates: true,
       cloned_source_packages_path: "SourcePackages",

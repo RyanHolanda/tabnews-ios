@@ -683,22 +683,6 @@
             filePath = "TabNewsUITests/UITestElements.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "app"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6AB9DB7A-0FDC-4094-A6AA-47952BCA2F15"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TabNewsUITests/UITestElements.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
             landmarkName = "app"
@@ -715,8 +699,8 @@
             filePath = "TabNewsUITests/LocalServer/LocalServer.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "run()"
             landmarkType = "7">
          </BreakpointContent>
@@ -731,8 +715,8 @@
             filePath = "TabNewsUITests/LocalServer/LocalServer.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
             landmarkName = "stop()"
             landmarkType = "7">
          </BreakpointContent>

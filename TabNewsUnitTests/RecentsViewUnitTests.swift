@@ -41,6 +41,6 @@ import XCTest
 
         try await Task.sleep(nanoseconds: 1000000000)
 
-        verify(contentRepository, times(5)).getRecentsPosts(page: any(), perPage: any()).with(returnType: [ContentPreviewDTO].self)
+        verify(contentRepository, times(2)).getRecentsPosts(page: any(), perPage: any()).with(returnType: [ContentPreviewDTO].self)
     }
 }

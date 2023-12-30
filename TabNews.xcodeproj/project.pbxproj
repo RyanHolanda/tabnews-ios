@@ -132,7 +132,6 @@
 /* Begin PBXFileReference section */
 		B5210B422AEDBE6100B18B96 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		B5210B4C2AEDBF5400B18B96 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
-		B5210B772AEECBDD00B18B96 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		B5210B8C2AEEDAEC00B18B96 /* Snapshooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshooter.swift; sourceTree = "<group>"; };
 		B523DBA12B38E01A00A5A304 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
 		B523DBA22B38E01A00A5A304 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
@@ -336,7 +335,6 @@
 			children = (
 				B56C2EC52B3540E70008320D /* swiftformat.config */,
 				B57302772B001AD600DB62EA /* .gitignore */,
-				B5210B772AEECBDD00B18B96 /* Makefile */,
 				B5633BC92AE172C900A3BE16 /* .swiftlint.yml */,
 				B5D8AE8C2AE59C9F00F4CA21 /* TestPlan.xctestplan */,
 				B523DBA02B38E01A00A5A304 /* fastlane */,

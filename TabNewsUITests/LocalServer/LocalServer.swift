@@ -13,7 +13,7 @@ class LocalServer {
     func run() {
         if server.operating { return }
         setRoutes()
-        try? server.start(8080)
+        try? server.start(8080, priority: .userInitiated)
     }
 
     private func setRoutes() {

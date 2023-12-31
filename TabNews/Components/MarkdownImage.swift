@@ -19,7 +19,7 @@ private extension View {
 }
 
 struct MarkdownImage: ImageProvider {
-    @State var imageHeight: CGFloat = 0
+    var onTapSaveImage: (_ image: UIImage) -> Void
 
     func makeImage(url: URL?) -> some View {
         AsyncImage(url: url) { image in
@@ -28,7 +28,7 @@ struct MarkdownImage: ImageProvider {
                 .scaledToFit()
                 .contextMenu {
                     Button {
-                        UIImageWriteToSavedPhotosAlbum(image.asUIImage, nil, nil, nil)
+                        onTapSaveImage(image.asUIImage)
                     } label: {
                         Label(String(localized: .localizable.saveImage), systemImage: "arrow.down.circle.dotted")
                     }
@@ -41,7 +41,6 @@ struct MarkdownImage: ImageProvider {
                         Label(String(localized: .localizable.shareImage), systemImage: "square.and.arrow.up")
                     }
                 }
-
         } placeholder: {
             ProgressView()
                 .frame(maxWidth: .infinity, idealHeight: 100, alignment: .center)

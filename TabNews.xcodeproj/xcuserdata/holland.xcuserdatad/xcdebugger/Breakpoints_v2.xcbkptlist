@@ -382,6 +382,66 @@
                   endingLineNumber = "22"
                   offsetFromSymbolStart = "64">
                </Location>
+               <Location
+                  uuid = "C2B1CD05-6A4C-4EF7-A4D0-02CC3C645521 - b13ca99c5959b26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TabNews.ContentViewModel.getContent(ownerUsername: Swift.String, slug: Swift.String) async -&gt; ()"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/Personal%20Projects/tabnews-ios/TabNews/Screens/Content/ContentViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "C2B1CD05-6A4C-4EF7-A4D0-02CC3C645521 - e8de6472e476213e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for TabNews.ContentViewModel.getContent(ownerUsername: Swift.String, slug: Swift.String) async -&gt; ()"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/Personal%20Projects/tabnews-ios/TabNews/Screens/Content/ContentViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "C2B1CD05-6A4C-4EF7-A4D0-02CC3C645521 - 9da92b1b46b0d924"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TabNews.ContentViewModel.getContent(ownerUsername: Swift.String, slug: Swift.String) async -&gt; ()"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/Personal%20Projects/tabnews-ios/TabNews/Screens/Content/ContentViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "C2B1CD05-6A4C-4EF7-A4D0-02CC3C645521 - d50b9bda0721b625"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for TabNews.ContentViewModel.getContent(ownerUsername: Swift.String, slug: Swift.String) async -&gt; ()"
+                  moduleName = "TabNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/holland/Documents/Personal%20Projects/tabnews-ios/TabNews/Screens/Content/ContentViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "64">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -693,14 +753,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "23B57E44-B243-4128-89D1-E437235ACEE1"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TabNewsUITests/LocalServer/LocalServer.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "run()"
             landmarkType = "7">
          </BreakpointContent>
@@ -709,15 +769,31 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E3EA5C4E-2D05-4BF7-B850-F1F64F4DBAD4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TabNewsUITests/LocalServer/LocalServer.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "stop()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1AE14645-18A2-435B-8C18-981C87747651"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabNewsUITests/Tests/ContentViewUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "testScrollOnCodeBlock()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

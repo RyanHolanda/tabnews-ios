@@ -1,6 +1,28 @@
 {
   "sourceLanguage" : "pt-BR",
   "strings" : {
+    "AllowToSavePhotos" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permitir Salvar Fotos"
+          }
+        }
+      }
+    },
+    "AllowToSavePhotosDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parece que você negou acesso para salvar fotos em seu iPhone.\nPara permitir acesso clique em \"Abrir Configurações\" abaixo e depois vá em: Fotos > Adicionar apenas fotos."
+          }
+        }
+      }
+    },
     "Answers" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -31,6 +53,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Respostas à %@ (%d)"
+          }
+        }
+      }
+    },
+    "Close" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechar"
           }
         }
       }
@@ -252,6 +285,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nenhum Comentário..."
+          }
+        }
+      }
+    },
+    "OpenSettings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir Configurações"
           }
         }
       }

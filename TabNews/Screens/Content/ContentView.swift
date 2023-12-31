@@ -23,7 +23,7 @@ struct ContentView: View {
                     .frame(width: geometry.size.width, height: geometry.size.height)
 
                 case .error: ErrorView {
-                        Task { await viewModel.getContent(ownerUsername: ownerUsername, slug: slug) }
+                        await viewModel.getContent(ownerUsername: ownerUsername, slug: slug)
                     }
                     .navigationBarTitleDisplayMode(.inline)
                     .frame(width: geometry.size.width, height: geometry.size.height)

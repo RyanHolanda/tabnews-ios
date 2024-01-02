@@ -6,7 +6,8 @@ This app is a TabNews client for iOS. You can see the original TabNews [here](ht
 ## Tools
 **XCode 15.1**\
 **SwiftUI**\
-**Fastlane**
+**Fastlane**\
+**SwiftLint**
 
 ## Install and Run
 To run this app on your machine is very easy. Just clone this repository, Build and Run the "TabNews" Target

@@ -43,7 +43,6 @@
 		B5669A442AFFD62B00953E49 /* MarkdownTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5669A432AFFD62B00953E49 /* MarkdownTheme.swift */; };
 		B5669A462B0006D100953E49 /* ContentViewUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5669A452B0006D100953E49 /* ContentViewUnitTests.swift */; };
 		B56B1D8C2B09066E00D00A21 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B1D8B2B09066E00D00A21 /* Empty.swift */; };
-		B56C2EC82B35418E0008320D /* NetworkImage in Frameworks */ = {isa = PBXBuildFile; productRef = B56C2EC72B35418E0008320D /* NetworkImage */; };
 		B58CB1472B01554C008B92F5 /* CommentsSectionSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CB1462B01554C008B92F5 /* CommentsSectionSnapshotTest.swift */; };
 		B58CB14D2B015B25008B92F5 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = B58CB14C2B015B25008B92F5 /* ViewInspector */; };
 		B5910EDC2AE1DEE7000E00D5 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5910EDB2AE1DEE7000E00D5 /* ContentRepository.swift */; };
@@ -231,7 +230,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56C2EC82B35418E0008320D /* NetworkImage in Frameworks */,
 				B5D8AE632AE58A0100F4CA21 /* xcstrings-tool in Frameworks */,
 				B5D1E77A2AFC4A8800B83391 /* MarkdownUI in Frameworks */,
 			);
@@ -575,7 +573,6 @@
 			packageProductDependencies = (
 				B5D8AE622AE58A0100F4CA21 /* xcstrings-tool */,
 				B5D1E7792AFC4A8800B83391 /* MarkdownUI */,
-				B56C2EC72B35418E0008320D /* NetworkImage */,
 			);
 			productName = TabNews;
 			productReference = B55E08C62B228FF500BD8817 /* TabNews.app */;
@@ -696,7 +693,6 @@
 				B556C6932AEB0DD00091527A /* XCRemoteSwiftPackageReference "Cuckoo" */,
 				B5D1E7782AFC4A8800B83391 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				B5E654AC2B2299EF0032F795 /* XCRemoteSwiftPackageReference "swifter" */,
-				B56C2EC62B35418E0008320D /* XCRemoteSwiftPackageReference "NetworkImage" */,
 			);
 			productRefGroup = B5633BA52AE1715A00A3BE16;
 			projectDirPath = "";
@@ -1368,20 +1364,12 @@
 				minimumVersion = 1.9.1;
 			};
 		};
-		B56C2EC62B35418E0008320D /* XCRemoteSwiftPackageReference "NetworkImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/gonzalezreal/NetworkImage";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
 		B5D1E7782AFC4A8800B83391 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.2.0;
+				minimumVersion = 2.3.0;
 			};
 		};
 		B5D8AE612AE58A0100F4CA21 /* XCRemoteSwiftPackageReference "xcstrings-tool" */ = {
@@ -1428,11 +1416,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B556C6932AEB0DD00091527A /* XCRemoteSwiftPackageReference "Cuckoo" */;
 			productName = Cuckoo;
-		};
-		B56C2EC72B35418E0008320D /* NetworkImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B56C2EC62B35418E0008320D /* XCRemoteSwiftPackageReference "NetworkImage" */;
-			productName = NetworkImage;
 		};
 		B58CB14C2B015B25008B92F5 /* ViewInspector */ = {
 			isa = XCSwiftPackageProductDependency;

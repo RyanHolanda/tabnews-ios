@@ -1,8 +1,8 @@
 import Foundation
 enum Logger {
-    static func logError(error: Error) {
+    static func logError(error: Error, description: String) {
         #if DEBUG
-            print("[E] An error occured >>> \(error)")
+            print("[E] \(description) >>> \(error)")
         #endif
     }
 

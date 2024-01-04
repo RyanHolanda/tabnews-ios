@@ -256,6 +256,17 @@
         }
       }
     },
+    "Joined" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrou"
+          }
+        }
+      }
+    },
     "JustNow" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -296,6 +307,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abrir Configurações"
+          }
+        }
+      }
+    },
+    "Profile" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perfil"
           }
         }
       }
@@ -377,6 +399,29 @@
         }
       }
     },
+    "TabCash" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d TabCash"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d TabCash"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "Tabcoins" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -386,13 +431,13 @@
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "%d Tabcoin"
+                  "value" : "%d TabCoin"
                 }
               },
               "other" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "%d Tabcoins"
+                  "value" : "%d TabCoins"
                 }
               }
             }

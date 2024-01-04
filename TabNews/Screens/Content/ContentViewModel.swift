@@ -29,7 +29,7 @@ extension ContentViewState {
             state = .success
         } catch {
             state = .error
-            Logger.logError(error: error)
+            Logger.logError(error: error, description: "Failed to get Content")
         }
     }
 }

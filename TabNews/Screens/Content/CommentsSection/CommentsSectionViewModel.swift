@@ -62,7 +62,7 @@ extension CommentsSectionListOrder {
             sortComments(by: commentsListSortBy)
             state = comments.isEmpty ? .empty : .success
         } catch {
-            Logger.logError(error: error)
+            Logger.logError(error: error, description: "Failed to get comments")
             state = .error
         }
     }

@@ -30,7 +30,7 @@ class CommentRepliesViewModel: ObservableObject {
             state = .success
         } catch {
             state = .error
-            Logger.logError(error: error)
+            Logger.logError(error: error, description: "Failed to get Comment Replies")
         }
     }
 

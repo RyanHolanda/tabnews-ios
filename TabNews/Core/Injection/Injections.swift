@@ -14,6 +14,11 @@ func setupInjections() {
         return ContentDataRepository(http: http) as ContentRepository
     }
 
+    injection.registerSingleton {
+        @Injected var http: HTTP
+        return UserDataRepository(http: http) as UserRepository
+    }
+
     injection.registerFactory(instanceName: "date.now") {
         Date.now
     }

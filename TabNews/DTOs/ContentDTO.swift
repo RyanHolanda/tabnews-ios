@@ -1,6 +1,6 @@
 import Foundation
 
-struct ContentDTO: DTOProtocol {
+struct ContentDTO: DTO {
     let id: String
     let ownerId: String
     let slug: String

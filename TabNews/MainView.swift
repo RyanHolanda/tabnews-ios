@@ -15,6 +15,12 @@ struct MainView: View {
                     title: { Text(.localizable.relevants) },
                     icon: { Image(systemName: "lightbulb") }
                 ) }
+
+            ProfileView.create(username: "CarlosDGS")
+                .tabItem { Label(
+                    title: { Text(.localizable.profile) },
+                    icon: { Image(systemName: "person.crop.circle") }
+                ) }
         }
     }
 }

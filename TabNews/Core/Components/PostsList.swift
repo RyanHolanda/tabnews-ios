@@ -28,7 +28,7 @@ struct PostsList: View {
                     }
                 }
             }
-            .padding()
+            .padding(.horizontal)
         }
         .refreshable {
             await onRefresh()

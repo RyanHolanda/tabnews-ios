@@ -33,7 +33,7 @@ enum RecentsViewState {
             posts.append(contentsOf: newPosts)
             state = .success
         } catch {
-            Logger.logError(error: error)
+            Logger.logError(error: error, description: "Failed to paginate Recents Data")
             state = .paginationError
             currentPage -= 1
         }
@@ -44,7 +44,7 @@ enum RecentsViewState {
             posts = try await repository.getRecentsPosts(page: 1, perPage: itemsPerPage)
             state = .refreshed
         } catch {
-            Logger.logError(error: error)
+            Logger.logError(error: error, description: "Failed to Refresh Recents Posts")
             state = .error
         }
     }
@@ -58,7 +58,7 @@ enum RecentsViewState {
             }
             state = .success
         } catch {
-            Logger.logError(error: error)
+            Logger.logError(error: error, description: "Failed to Fetch Recents Posts")
             state = .error
         }
     }

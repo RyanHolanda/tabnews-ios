@@ -7,11 +7,7 @@ protocol ContentRepository {
     func getComments(ownerUsername: String, slug: String) async throws -> [CommentDTO]
 }
 
-class ContentDataRepository: ContentRepository {
-    init(http: HTTPProtocol) {
-        self.http = http
-    }
-
+struct ContentDataRepository: ContentRepository {
     let http: HTTPProtocol
 
     func getRecentsPosts(page: Int, perPage: Int) async throws -> [ContentPreviewDTO] {

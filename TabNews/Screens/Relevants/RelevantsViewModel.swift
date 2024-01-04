@@ -34,7 +34,7 @@ enum RelevantsViewState {
             posts.append(contentsOf: newPosts)
             state = .success
         } catch {
-            Logger.logError(error: error)
+            Logger.logError(error: error, description: "Failed to paginate Relevants Posts")
             state = .paginationError
             currentPage -= 1
         }
@@ -45,7 +45,7 @@ enum RelevantsViewState {
             posts = try await repository.getRelevantsPosts(page: 1, perPage: itemsPerPage)
             state = .refreshed
         } catch {
-            Logger.logError(error: error)
+            Logger.logError(error: error, description: "Failed to refresh Relevants Posts")
             state = .error
         }
     }
@@ -59,7 +59,7 @@ enum RelevantsViewState {
             }
             state = .success
         } catch {
-            Logger.logError(error: error)
+            Logger.logError(error: error, description: "Failed to fetch Relevants Posts")
             state = .error
         }
     }
